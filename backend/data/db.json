@@ -1,0 +1,2806 @@
+{
+  "users": [
+    {
+      "id": "user_ganpat_23it17",
+      "email": "ganpat.singh@ecajmer.ac.in",
+      "password": "$2a$10$RYv7P1xZrZL00i873bYR/O6GwjEDD4xfWYKMkPy6U3Thh/W3n.rRq",
+      "name": "Ganpat Singh",
+      "role": "student",
+      "createdAt": "2026-10-01T04:50:23.501Z"
+    },
+    {
+      "id": "admin_tpo_geca",
+      "email": "tpo@ecajmer.ac.in",
+      "password": "$2a$10$RYv7P1xZrZL00i873bYR/O6GwjEDD4xfWYKMkPy6U3Thh/W3n.rRq",
+      "name": "TPO Placement Cell",
+      "role": "tpo_admin",
+      "createdAt": "2026-10-01T04:50:23.501Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "prof_user_ganpat_23it17",
+      "userId": "user_ganpat_23it17",
+      "name": "Ganpat Singh",
+      "rollNo": "23IT17",
+      "college": "Govt. Engineering College, Ajmer",
+      "branch": "Computer Science & Engineering",
+      "semester": 7,
+      "cgpa": 8.4,
+      "targetTier": "tier2",
+      "targetRole": "Full Stack SDE / Software Engineer",
+      "skills": [
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Data Structures",
+        "Algorithms",
+        "SQL",
+        "Git"
+      ],
+      "email": "ganpat.singh@ecajmer.ac.in",
+      "updatedAt": "2026-10-01T05:14:18.549Z"
+    }
+  ],
+  "dsa_problems": [
+    {
+      "id": "dsa_01",
+      "title": "Two Sum",
+      "topic": "Arrays",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/two-sum/",
+      "completed": true,
+      "notes": "Solved using Hash Map in O(n) time and O(n) space.",
+      "timeSpentMin": 20,
+      "completedAt": "2026-09-24T04:50:23.430Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_02",
+      "title": "Best Time to Buy and Sell Stock",
+      "topic": "Arrays",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "completed": true,
+      "notes": "Track minimum price so far and calculate max profit.",
+      "timeSpentMin": 15,
+      "completedAt": "2026-09-25T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_03",
+      "title": "Longest Substring Without Repeating Characters",
+      "topic": "Strings",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "completed": true,
+      "notes": "Sliding window with character index hash map.",
+      "timeSpentMin": 35,
+      "completedAt": "2026-09-26T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_04",
+      "title": "3Sum",
+      "topic": "Arrays",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/3sum/",
+      "completed": true,
+      "notes": "Sort array + two-pointer approach, avoid duplicate triplets.",
+      "timeSpentMin": 40,
+      "completedAt": "2026-09-27T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_05",
+      "title": "Trapping Rain Water",
+      "topic": "Arrays",
+      "difficulty": "Hard",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/trapping-rain-water/",
+      "completed": false,
+      "notes": "Need to review two-pointer vs monotonic stack approach.",
+      "timeSpentMin": 0,
+      "completedAt": null,
+      "userId": "user_ganpat_23it17",
+      "updatedAt": "2026-10-01T05:12:23.354Z"
+    },
+    {
+      "id": "dsa_06",
+      "title": "Reverse a Linked List",
+      "topic": "Linked Lists",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/reverse-linked-list/",
+      "completed": true,
+      "notes": "Iterative 3-pointer method (prev, curr, next).",
+      "timeSpentMin": 15,
+      "completedAt": "2026-09-27T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_07",
+      "title": "Merge Two Sorted Lists",
+      "topic": "Linked Lists",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "completed": true,
+      "notes": "Dummy head node simplifies pointer reassignment.",
+      "timeSpentMin": 15,
+      "completedAt": "2026-09-28T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_08",
+      "title": "Maximum Depth of Binary Tree",
+      "topic": "Trees",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "completed": true,
+      "notes": "Simple recursive post-order DFS: 1 + max(left, right).",
+      "timeSpentMin": 10,
+      "completedAt": "2026-09-28T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_09",
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "topic": "Trees",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "completed": true,
+      "notes": "Leverage BST property: if both values are greater, go right, else left.",
+      "timeSpentMin": 25,
+      "completedAt": "2026-09-29T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_10",
+      "title": "Number of Islands",
+      "topic": "Graphs",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/number-of-islands/",
+      "completed": true,
+      "notes": "Grid traversal with DFS or BFS marking visited cells as '0'.",
+      "timeSpentMin": 35,
+      "completedAt": "2026-09-29T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_11",
+      "title": "Course Schedule (Cycle Detection)",
+      "topic": "Graphs",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/course-schedule/",
+      "completed": false,
+      "notes": "Kahn's Topological Sort algorithm using indegree array.",
+      "timeSpentMin": 0,
+      "completedAt": null,
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_12",
+      "title": "Climbing Stairs",
+      "topic": "Dynamic Programming",
+      "difficulty": "Easy",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/climbing-stairs/",
+      "completed": true,
+      "notes": "Fibonacci recurrence dp[i] = dp[i-1] + dp[i-2].",
+      "timeSpentMin": 15,
+      "completedAt": "2026-09-30T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_13",
+      "title": "Coin Change",
+      "topic": "Dynamic Programming",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/coin-change/",
+      "completed": true,
+      "notes": "Unbounded knapsack style DP bottom-up 1D array.",
+      "timeSpentMin": 45,
+      "completedAt": "2026-09-30T04:50:23.431Z",
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_14",
+      "title": "Longest Increasing Subsequence",
+      "topic": "Dynamic Programming",
+      "difficulty": "Medium",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+      "completed": false,
+      "notes": "O(n^2) dp or O(n log n) with patience sorting / binary search.",
+      "timeSpentMin": 0,
+      "completedAt": null,
+      "userId": "user_ganpat_23it17"
+    },
+    {
+      "id": "dsa_15",
+      "title": "Median of Two Sorted Arrays",
+      "topic": "Binary Search",
+      "difficulty": "Hard",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+      "completed": false,
+      "notes": "Binary search on partition points of smaller array in O(log(min(m, n))).",
+      "timeSpentMin": 0,
+      "completedAt": null,
+      "userId": "user_ganpat_23it17"
+    }
+  ],
+  "aptitude_results": [
+    {
+      "id": "apt_res_01",
+      "userId": "user_ganpat_23it17",
+      "category": "quantitative",
+      "totalQuestions": 5,
+      "correctCount": 4,
+      "scorePercentage": 80,
+      "timeTakenSeconds": 320,
+      "topicBreakdown": {
+        "Percentages": 100,
+        "Time & Work": 100,
+        "Speed & Distance": 100,
+        "Probability": 0,
+        "Averages": 100
+      },
+      "completedAt": "2026-09-28T04:50:23.501Z"
+    },
+    {
+      "id": "apt_res_02",
+      "userId": "user_ganpat_23it17",
+      "category": "logical",
+      "totalQuestions": 5,
+      "correctCount": 4,
+      "scorePercentage": 80,
+      "timeTakenSeconds": 280,
+      "topicBreakdown": {
+        "Number Series": 100,
+        "Blood Relations": 100,
+        "Coding-Decoding": 100,
+        "Syllogism": 0,
+        "Direction Sense": 100
+      },
+      "completedAt": "2026-09-29T04:50:23.501Z"
+    },
+    {
+      "id": "apt_res_03",
+      "userId": "user_ganpat_23it17",
+      "category": "core_cs",
+      "totalQuestions": 5,
+      "correctCount": 5,
+      "scorePercentage": 100,
+      "timeTakenSeconds": 240,
+      "topicBreakdown": {
+        "Operating Systems": 100,
+        "Data Structures": 100,
+        "DBMS": 100,
+        "Networks": 100,
+        "OOP": 100
+      },
+      "completedAt": "2026-09-30T04:50:23.501Z"
+    },
+    {
+      "id": "e322b37c-aece-4d4c-b6c7-7c468274abed",
+      "createdAt": "2026-10-01T05:15:56.542Z",
+      "userId": "user_ganpat_23it17",
+      "category": "verbal",
+      "totalQuestions": 4,
+      "correctCount": 1,
+      "scorePercentage": 25,
+      "timeTakenSeconds": 19,
+      "topicBreakdown": {
+        "Sentence Correction": {
+          "total": 1,
+          "correct": 1
+        },
+        "Vocabulary / Antonyms": {
+          "total": 1,
+          "correct": 0
+        },
+        "Idioms & Phrases": {
+          "total": 1,
+          "correct": 0
+        },
+        "Reading Comprehension": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "completedAt": "2026-10-01T05:15:56.542Z"
+    }
+  ],
+  "resume_analyses": [
+    {
+      "id": "resume_01",
+      "userId": "user_ganpat_23it17",
+      "fileName": "Ganpat_Singh_Resume.pdf",
+      "targetRole": "Full Stack SDE / Software Engineer",
+      "atsScore": 78,
+      "matchScore": 82,
+      "breakdown": {
+        "skillsMatch": 85,
+        "impactAndMetrics": 70,
+        "formatting": 80,
+        "experienceDepth": 75,
+        "contactAndEducation": 90
+      },
+      "matchedKeywords": [
+        "React.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Data Structures",
+        "REST APIs",
+        "Git"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "CI/CD Pipelines",
+        "Redis / Caching",
+        "Unit Testing (Jest/Mocha)",
+        "System Design"
+      ],
+      "strengths": [
+        "Strong full-stack core competencies with MERN stack explicitly demonstrated.",
+        "Good academic foundation from Govt. Engineering College, Ajmer.",
+        "Clear project descriptions with architecture flow."
+      ],
+      "improvements": [
+        "Quantify project outcomes: e.g. \"reduced latency by 35%\" or \"serves 500+ daily requests\".",
+        "Include cloud and deployment proficiencies (Docker, AWS, or CI/CD).",
+        "Ensure uniform date formatting across project and education sections."
+      ],
+      "analyzedAt": "2026-09-29T04:50:23.501Z"
+    },
+    {
+      "id": "ae5770cf-080a-4635-841a-3aee1d785bb8",
+      "createdAt": "2026-10-01T04:55:39.400Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "Pasted_Resume_Text.txt",
+      "targetRole": "Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Software Engineer proficient in React, Node.js, MongoDB, Docker, Microservices, and System Design.",
+      "atsScore": 56,
+      "matchScore": 57,
+      "breakdown": {
+        "skillsMatch": 57,
+        "impactAndMetrics": 24,
+        "formatting": 60,
+        "experienceDepth": 45,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "Node.js",
+        "Go",
+        "MongoDB"
+      ],
+      "missingKeywords": [
+        "Microservices",
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Basic layout in place."
+      ],
+      "improvements": [
+        "Low keyword match against target role (57%). Add missing skills: Microservices, Docker, System Design.",
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\".",
+        "Add a dedicated \"Certifications & Achievements\" section to highlight hackathons, rankings, or cloud badges."
+      ],
+      "analyzedAt": "2026-10-01T04:55:39.400Z"
+    },
+    {
+      "id": "0a114781-360e-4788-ba1c-62681a7d12f6",
+      "createdAt": "2026-10-01T05:04:40.953Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "Pasted_Resume_Text.txt",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 72,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 44,
+        "formatting": 80,
+        "experienceDepth": 75,
+        "contactAndEducation": 70
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\"."
+      ],
+      "analyzedAt": "2026-10-01T05:04:40.953Z"
+    },
+    {
+      "id": "7f3c1457-5f89-4a93-9419-f8f120ad2614",
+      "createdAt": "2026-10-01T05:05:47.969Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "yash_resume.pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 77,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 20,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\"."
+      ],
+      "analyzedAt": "2026-10-01T05:05:47.969Z"
+    },
+    {
+      "id": "a435ebf5-b96b-4de4-9329-939273b61afc",
+      "createdAt": "2026-10-01T05:05:50.497Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "yash_resume.pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 77,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 20,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\"."
+      ],
+      "analyzedAt": "2026-10-01T05:05:50.497Z"
+    },
+    {
+      "id": "974d8468-d492-4c78-8586-964b6d327dc1",
+      "createdAt": "2026-10-01T05:06:36.730Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "Pasted_Resume_Text.txt",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 72,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 44,
+        "formatting": 80,
+        "experienceDepth": 75,
+        "contactAndEducation": 70
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\"."
+      ],
+      "analyzedAt": "2026-10-01T05:06:36.730Z"
+    },
+    {
+      "id": "6ba1cd69-047d-414d-a30d-a1be7e87054c",
+      "createdAt": "2026-10-01T05:06:49.224Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "Pasted_Resume_Text.txt",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 72,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 44,
+        "formatting": 80,
+        "experienceDepth": 75,
+        "contactAndEducation": 70
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\"."
+      ],
+      "analyzedAt": "2026-10-01T05:06:49.224Z"
+    },
+    {
+      "id": "6be7a7b7-219c-47a8-93c2-dceaaa5f5b21",
+      "createdAt": "2026-10-01T05:07:46.766Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "RONAKIT.resume (1).pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 71,
+      "matchScore": 75,
+      "breakdown": {
+        "skillsMatch": 75,
+        "impactAndMetrics": 20,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 80
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "RESTful APIs",
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js."
+      ],
+      "improvements": [
+        "Add measurable achievements using the Google XYZ formula: \"Accomplished [X] as measured by [Y], by doing [Z]\".",
+        "Replace passive statements (\"worked on\", \"responsible for\") with active impact verbs like \"architected\", \"accelerated\", or \"optimized\".",
+        "Ensure both your LinkedIn profile and GitHub repository URLs are clearly visible in the header."
+      ],
+      "analyzedAt": "2026-10-01T05:07:46.766Z"
+    },
+    {
+      "id": "50980bee-eac9-41ed-8c54-ff135419e8c6",
+      "createdAt": "2026-10-01T05:08:51.886Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "cv_main.pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 92,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 96,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js.",
+        "Excellent use of quantifiable metrics (5 outcome-driven metrics detected).",
+        "Dynamic bullet points utilizing strong action verbs."
+      ],
+      "improvements": [],
+      "analyzedAt": "2026-10-01T05:08:51.886Z"
+    },
+    {
+      "id": "0a5cbbbc-25c0-46c2-841b-019365782a54",
+      "createdAt": "2026-10-01T08:36:12.753Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "cv_main.pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 92,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 96,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js.",
+        "Excellent use of quantifiable metrics (5 outcome-driven metrics detected).",
+        "Dynamic bullet points utilizing strong action verbs."
+      ],
+      "improvements": [],
+      "analyzedAt": "2026-10-01T08:36:12.753Z"
+    },
+    {
+      "id": "b198d881-a01c-4af1-a083-6017733fa693",
+      "createdAt": "2026-10-08T08:42:43.568Z",
+      "userId": "user_ganpat_23it17",
+      "fileName": "cv_main.pdf",
+      "targetRole": "Full Stack Software Engineer",
+      "jobDescriptionSnippet": "Looking for a Full Stack Software Engineer proficient in React.js, Node.js, Express, MongoDB, RESTful APIs, System Design, Git, Docker, and Data Structures.",
+      "atsScore": 92,
+      "matchScore": 83,
+      "breakdown": {
+        "skillsMatch": 83,
+        "impactAndMetrics": 96,
+        "formatting": 100,
+        "experienceDepth": 90,
+        "contactAndEducation": 100
+      },
+      "matchedKeywords": [
+        "React",
+        "React.js",
+        "Node.js",
+        "Express",
+        "Go",
+        "REST",
+        "RESTful APIs",
+        "MongoDB",
+        "Git",
+        "Data Structures"
+      ],
+      "missingKeywords": [
+        "Docker",
+        "System Design"
+      ],
+      "strengths": [
+        "Good tech stack alignment! Matches key requirements like React, React.js, Node.js.",
+        "Excellent use of quantifiable metrics (5 outcome-driven metrics detected).",
+        "Dynamic bullet points utilizing strong action verbs."
+      ],
+      "improvements": [],
+      "analyzedAt": "2026-10-08T08:42:43.568Z"
+    }
+  ],
+  "mock_interviews": [
+    {
+      "id": "interview_01",
+      "userId": "user_ganpat_23it17",
+      "role": "Full Stack SDE (Product-Based)",
+      "tier": "tier1",
+      "overallScore": 81,
+      "rubric": {
+        "technicalAccuracy": 8.5,
+        "problemSolving": 8,
+        "communication": 8,
+        "systemThinking": 8
+      },
+      "questionsAnswered": 3,
+      "feedback": "Demonstrated solid grasp of asynchronous event loop in Node.js and state lifecycle in React. Can improve on explaining database indexing tradeoffs and space complexity.",
+      "completedAt": "2026-09-30T04:50:23.501Z"
+    }
+  ],
+  "readiness_scores": [
+    {
+      "id": "38889e96-49bb-4805-9a18-1043ed7c2618",
+      "createdAt": "2026-10-01T04:53:58.176Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier1",
+      "primaryScore": 84,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 78,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 84,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 83,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 84,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T04:53:58.175Z"
+    },
+    {
+      "id": "3495eff5-e2ae-43ee-899a-a98b90658787",
+      "createdAt": "2026-10-01T05:03:54.159Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier1",
+      "primaryScore": 81,
+      "status": "Interview Ready (Near Target)",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 56,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 81,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Interview Ready (Near Target)",
+          "statusColor": "blue",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 79,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 78,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Medium",
+          "pillar": "Resume",
+          "action": "Incorporate quantifiable metrics (e.g., latency, users, % improvement) and align keywords with target JD.",
+          "impact": "+5 to +8 pts ATS compatibility"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:03:54.159Z"
+    },
+    {
+      "id": "be3a1611-bc06-4cfa-9999-915ac96806dc",
+      "createdAt": "2026-10-01T05:03:54.166Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier1",
+      "primaryScore": 81,
+      "status": "Interview Ready (Near Target)",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 56,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 81,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Interview Ready (Near Target)",
+          "statusColor": "blue",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 79,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 78,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Medium",
+          "pillar": "Resume",
+          "action": "Incorporate quantifiable metrics (e.g., latency, users, % improvement) and align keywords with target JD.",
+          "impact": "+5 to +8 pts ATS compatibility"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:03:54.166Z"
+    },
+    {
+      "id": "01ddfb36-a999-4535-9fdd-9f81976e2b06",
+      "createdAt": "2026-10-01T05:14:13.167Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier1",
+      "primaryScore": 86,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 86,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 86,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 87,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:14:13.167Z"
+    },
+    {
+      "id": "015d8fa7-a9fc-431b-adf7-57cd56174d89",
+      "createdAt": "2026-10-01T05:14:13.173Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier1",
+      "primaryScore": 86,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 86,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 86,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 87,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:14:13.173Z"
+    },
+    {
+      "id": "54d60ef0-1a1e-4ed3-9e46-23235609c387",
+      "createdAt": "2026-10-01T05:14:18.571Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 86,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 86,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 86,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 87,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:14:18.571Z"
+    },
+    {
+      "id": "9f393e8b-2148-4794-b264-49bdff5b0686",
+      "createdAt": "2026-10-01T05:14:51.264Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 86,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 86,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 86,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 87,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:14:51.264Z"
+    },
+    {
+      "id": "5a26d6c4-686d-47e0-b34c-ba91238bd927",
+      "createdAt": "2026-10-01T05:14:52.941Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 86,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 87,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 86,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 86,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 87,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "Refinement",
+          "pillar": "Maintenance",
+          "action": "Maintain consistent daily problem solving and attempt company-specific mock tests.",
+          "impact": "Maintain peak readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:14:52.941Z"
+    },
+    {
+      "id": "25900f69-2691-490b-a764-9b403f9228fd",
+      "createdAt": "2026-10-01T05:16:09.166Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:16:09.166Z"
+    },
+    {
+      "id": "4ac14eca-847e-4e9f-9253-8bf7826028be",
+      "createdAt": "2026-10-01T05:16:09.171Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:16:09.171Z"
+    },
+    {
+      "id": "364fa8d5-ccee-4bea-b8d7-02d33863e1ba",
+      "createdAt": "2026-10-01T05:16:41.477Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:16:41.477Z"
+    },
+    {
+      "id": "6b338f60-3d00-43f0-919c-d6d7b64d067a",
+      "createdAt": "2026-10-01T05:16:41.483Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T05:16:41.483Z"
+    },
+    {
+      "id": "d22b590b-9748-491b-a796-d9308f25d31f",
+      "createdAt": "2026-10-01T06:36:55.606Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T06:36:55.606Z"
+    },
+    {
+      "id": "eab71a4c-18d9-4c8a-8351-7f26d045f44a",
+      "createdAt": "2026-10-01T06:36:55.612Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T06:36:55.612Z"
+    },
+    {
+      "id": "773c0352-ab0e-4f24-b03c-771916c93d9a",
+      "createdAt": "2026-10-01T06:38:12.295Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T06:38:12.295Z"
+    },
+    {
+      "id": "6c169425-d38e-447a-b6e8-ff8cbd6e9325",
+      "createdAt": "2026-10-01T06:38:12.302Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T06:38:12.302Z"
+    },
+    {
+      "id": "62547876-bf73-4296-8f68-01558154d851",
+      "createdAt": "2026-10-01T08:35:38.474Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:35:38.473Z"
+    },
+    {
+      "id": "82276a56-1ca0-4d8b-a89b-99fdb2312ed1",
+      "createdAt": "2026-10-01T08:35:38.481Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:35:38.481Z"
+    },
+    {
+      "id": "9e4167c5-5e7d-4377-b2af-c402597f8228",
+      "createdAt": "2026-10-01T08:44:00.319Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:00.319Z"
+    },
+    {
+      "id": "b8450603-4f60-4607-a7f0-7cfb1676c918",
+      "createdAt": "2026-10-01T08:44:00.329Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:00.329Z"
+    },
+    {
+      "id": "b03e1552-12f6-48c2-af46-54736eab6e99",
+      "createdAt": "2026-10-01T08:44:25.613Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.613Z"
+    },
+    {
+      "id": "e2594c00-28c2-4263-b4c2-77d2a81fa790",
+      "createdAt": "2026-10-01T08:44:25.623Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.623Z"
+    },
+    {
+      "id": "853ad8c5-6bb7-49a2-af1c-e1920b417cde",
+      "createdAt": "2026-10-01T08:44:25.634Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.634Z"
+    },
+    {
+      "id": "d6ad3cee-7bca-4ac3-81f1-10f9ca07fca0",
+      "createdAt": "2026-10-01T08:44:25.645Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.645Z"
+    },
+    {
+      "id": "418778ca-f5d6-4da2-b46e-08b22f9161f5",
+      "createdAt": "2026-10-01T08:44:25.653Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.653Z"
+    },
+    {
+      "id": "2f4c2f4c-c17f-4519-afee-07cb9fd639b4",
+      "createdAt": "2026-10-01T08:44:25.662Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:25.662Z"
+    },
+    {
+      "id": "7e27da5f-c46a-4da3-a24c-8d767f6df4b3",
+      "createdAt": "2026-10-01T08:44:28.321Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:28.321Z"
+    },
+    {
+      "id": "94750b97-2920-49f8-ac86-09ba6c1a4260",
+      "createdAt": "2026-10-01T08:44:28.328Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-01T08:44:28.328Z"
+    },
+    {
+      "id": "94da7a39-9e5c-4ddd-a5f7-3e31663118b7",
+      "createdAt": "2026-10-08T08:40:52.110Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-08T08:40:52.110Z"
+    },
+    {
+      "id": "df3942b5-d2d6-42ba-9bb5-e9c01b9b1b79",
+      "createdAt": "2026-10-08T08:40:52.117Z",
+      "userId": "user_ganpat_23it17",
+      "targetTier": "tier2",
+      "primaryScore": 81,
+      "status": "Placement Ready",
+      "pillars": {
+        "dsa": 87,
+        "aptitude": 71,
+        "resume": 92,
+        "interview": 81
+      },
+      "tierScores": {
+        "tier1": {
+          "tierName": "Product-Based (FAANG, Unicorns, Tier-1 Tech)",
+          "score": 83,
+          "benchmark": 78,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 40,
+            "aptitude": 20,
+            "resume": 15,
+            "interview": 25
+          }
+        },
+        "tier2": {
+          "tierName": "Service-Based (TCS, Infosys, Wipro, Accenture)",
+          "score": 81,
+          "benchmark": 68,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 15,
+            "aptitude": 35,
+            "resume": 20,
+            "interview": 30
+          }
+        },
+        "tier3": {
+          "tierName": "Core Engineering / PSU / Government Technical",
+          "score": 80,
+          "benchmark": 70,
+          "isQualified": true,
+          "status": "Placement Ready",
+          "statusColor": "emerald",
+          "weights": {
+            "dsa": 10,
+            "aptitude": 45,
+            "resume": 25,
+            "interview": 20
+          }
+        }
+      },
+      "actionRoadmap": [
+        {
+          "priority": "High",
+          "pillar": "Aptitude",
+          "action": "Take a timed test on Quantitative (Percentages & Time-Work) and Syllogisms.",
+          "impact": "+8 pts on Tier-2 & Tier-3 readiness"
+        }
+      ],
+      "calculatedAt": "2026-10-08T08:40:52.117Z"
+    }
+  ]
+}

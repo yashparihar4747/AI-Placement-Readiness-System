@@ -1,0 +1,32 @@
+{
+  "name": "ai-placement-readiness-system",
+  "version": "1.0.0",
+  "description": "Unified AI-Based Placement Preparation and Readiness Tracking System for GECA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "start:server": "node api/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^1.49.0",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
+  }
+}
