@@ -182,7 +182,7 @@ export const Login = () => {
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                   <div>
                     <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
-                      Roll Number
+                      Roll No.
                     </label>
                     <input
                       type="text"
