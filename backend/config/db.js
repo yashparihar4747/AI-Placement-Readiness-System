@@ -1,4 +1,7 @@
+import dotenv from 'dotenv';
 import { store } from './store.js';
+
+dotenv.config();
 
 // Collection abstractions matching Synopsis requirements
 export const User = store.collection('users');
@@ -10,15 +13,20 @@ export const MockInterview = store.collection('mock_interviews');
 export const ReadinessScore = store.collection('readiness_scores');
 
 export const connectDB = async () => {
+  const uri = process.env.MONGODB_URI || 'mongodb+srv://ganpat123:power@cluster0.qr2xvhf.mongodb.net/placement_readiness?retryWrites=true&w=majority';
   try {
-    if (process.env.MONGODB_URI) {
-      console.log(`🔌 Attempting connection to MongoDB at: ${process.env.MONGODB_URI}`);
-      // In production/cloud, mongoose can be plugged in here
+    console.log(`🔌 Initializing database connection...`);
+    const success = await store.initMongo(uri);
+    if (success) {
+      console.log('✅ [Database Layer] Connected to MongoDB Atlas & synchronized 7 collections.');
+      return true;
     }
-    console.log('✅ [Database Layer] Connected to Local Data Store (Synchronized to backend/data/db.json)');
-    return true;
   } catch (err) {
-    console.error('❌ Database connection error:', err);
-    return false;
+    console.error('❌ Database connection error:', err.message);
   }
+  console.log('⚠️ [Database Layer] Operating in local resilient store mode (db.json)');
+  return false;
 };
+
+export const getMongoDB = () => store.mongoDb;
+export const getMongoClient = () => store.mongoClient;

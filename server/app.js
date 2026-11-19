@@ -10,6 +10,8 @@ import aptitudeRoutes from './routes/aptitudeRoutes.js';
 import resumeRoutes from './routes/resumeRoutes.js';
 import interviewRoutes from './routes/interviewRoutes.js';
 import readinessRoutes from './routes/readinessRoutes.js';
+import adminRoutes from './src/routes/adminRoutes.js';
+import studentRoutes from './src/routes/studentRoutes.js';
 
 dotenv.config();
 
@@ -52,6 +54,8 @@ apiRouter.use('/aptitude', aptitudeRoutes);
 apiRouter.use('/resume', resumeRoutes);
 apiRouter.use('/interview', interviewRoutes);
 apiRouter.use('/readiness', readinessRoutes);
+apiRouter.use('/admin', adminRoutes);
+apiRouter.use('/student', studentRoutes);
 
 // Mount master router on BOTH '/api' and '/'
 // This guarantees that whether Vercel passes '/api/auth/login' or '/auth/login', it matches perfectly!

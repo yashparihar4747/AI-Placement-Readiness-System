@@ -1,0 +1,346 @@
+[
+  {
+    "id": "test_quant_01",
+    "title": "Quantitative Aptitude - Foundation (Easy)",
+    "category": "aptitude",
+    "subtopic": "Quantitative",
+    "durationMinutes": 20,
+    "questionCount": 15,
+    "difficulty": "Easy",
+    "negativeMarking": 0.25,
+    "description": "Foundation evaluation covering Percentages, Profit & Loss, Speed & Distance, and Ratios.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_quant_02",
+    "title": "Quantitative Aptitude - Intermediate (Medium)",
+    "category": "aptitude",
+    "subtopic": "Quantitative",
+    "durationMinutes": 25,
+    "questionCount": 15,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Covers Compound Interest, Time & Work systems, Alligation, and Permutations.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_quant_03",
+    "title": "Quantitative Aptitude - Advanced Sprint (Hard)",
+    "category": "aptitude",
+    "subtopic": "Quantitative",
+    "durationMinutes": 30,
+    "questionCount": 15,
+    "difficulty": "Hard",
+    "negativeMarking": 0.33,
+    "description": "Advanced test covering Probability, Cryptarithmetic, Number Theory, and Higher Algebra.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_log_01",
+    "title": "Logical Reasoning - Foundation (Easy)",
+    "category": "aptitude",
+    "subtopic": "Logical",
+    "durationMinutes": 20,
+    "questionCount": 15,
+    "difficulty": "Easy",
+    "negativeMarking": 0.25,
+    "description": "Number series, Blood relations, basic syllogisms, and direction sense.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_log_02",
+    "title": "Logical Reasoning - Intermediate (Medium)",
+    "category": "aptitude",
+    "subtopic": "Logical",
+    "durationMinutes": 25,
+    "questionCount": 15,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Circular arrangements, Coding patterns, Data sufficiency, and Venn deductions.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_log_03",
+    "title": "Logical Reasoning - Critical & Puzzles (Hard)",
+    "category": "aptitude",
+    "subtopic": "Logical",
+    "durationMinutes": 30,
+    "questionCount": 15,
+    "difficulty": "Hard",
+    "negativeMarking": 0.33,
+    "description": "Binary truth logic, Multi-variable seating, Conditional deduction, and Critical arguments.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_verb_01",
+    "title": "Verbal Ability & Grammar (Easy)",
+    "category": "aptitude",
+    "subtopic": "Verbal",
+    "durationMinutes": 15,
+    "questionCount": 15,
+    "difficulty": "Easy",
+    "negativeMarking": 0.25,
+    "description": "Basic grammar rules, spelling, antonyms, and idioms.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_verb_02",
+    "title": "Verbal Ability - Professional English (Medium)",
+    "category": "aptitude",
+    "subtopic": "Verbal",
+    "durationMinutes": 20,
+    "questionCount": 15,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Sentence correction, reading comprehension, para jumbles, and vocabulary in context.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_verb_03",
+    "title": "Verbal Ability - Advanced Verbal Mastery (Hard)",
+    "category": "aptitude",
+    "subtopic": "Verbal",
+    "durationMinutes": 25,
+    "questionCount": 15,
+    "difficulty": "Hard",
+    "negativeMarking": 0.33,
+    "description": "Nuanced critical reading, tone analysis, subjunctive moods, and sentence equivalence.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_di_01",
+    "title": "Data Interpretation & Analysis",
+    "category": "aptitude",
+    "subtopic": "Data Interpretation",
+    "durationMinutes": 25,
+    "questionCount": 15,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Tabular breakdowns, Bar graph analytics, and percentage comparison calculations.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_cs_os",
+    "title": "Operating Systems Fundamentals",
+    "category": "core_cs",
+    "subtopic": "Operating Systems",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Processes, Threads, Scheduling algorithms, Deadlock prevention, and Virtual Memory.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "test_cs_dbms",
+    "title": "DBMS & SQL Query Mastery",
+    "category": "core_cs",
+    "subtopic": "DBMS & SQL",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Relational normalization, ACID transactions, B+ Tree indexing, and SQL queries.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "test_cs_cn",
+    "title": "Computer Networks & Protocols",
+    "category": "core_cs",
+    "subtopic": "Computer Networks",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "OSI Layering, TCP vs UDP, CIDR Subnetting, Routing, DNS, and TLS handshakes.",
+    "targetBranches": [
+      "CSE",
+      "IT",
+      "ECE"
+    ]
+  },
+  {
+    "id": "test_cs_dsa",
+    "title": "DSA Conceptual & Complexity Test",
+    "category": "core_cs",
+    "subtopic": "Data Structures",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Time & Space complexity analysis, tree traversals, graphs, and dynamic programming.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "test_cs_oop",
+    "title": "OOP & System Design Principles",
+    "category": "core_cs",
+    "subtopic": "OOP & System Design",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Encapsulation, Polymorphism, SOLID principles, and microservice architectural patterns.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "test_cs_web",
+    "title": "Full Stack & Web Engineering",
+    "category": "core_cs",
+    "subtopic": "Web Development",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "React lifecycle & hooks, Node event loop, Express routing, MongoDB, and JWT security.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "test_cs_languages",
+    "title": "Programming Languages (C, Java, Python)",
+    "category": "core_cs",
+    "subtopic": "Programming Languages",
+    "durationMinutes": 25,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Memory models in C, Java garbage collection & multithreading, Python GIL & decorators.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "test_engg_ece",
+    "title": "Electronics & Communication Core",
+    "category": "core_engineering",
+    "subtopic": "Electronics & Communication",
+    "durationMinutes": 30,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.33,
+    "description": "Signal processing, Nyquist sampling, Op-Amps, and Digital Electronics.",
+    "targetBranches": [
+      "ECE"
+    ]
+  },
+  {
+    "id": "test_engg_ee",
+    "title": "Electrical Engineering Systems",
+    "category": "core_engineering",
+    "subtopic": "Electrical Engineering",
+    "durationMinutes": 30,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.33,
+    "description": "Power systems, Transformers, Control systems, and AC circuit analysis.",
+    "targetBranches": [
+      "EE"
+    ]
+  },
+  {
+    "id": "test_engg_me",
+    "title": "Mechanical Engineering Fundamentals",
+    "category": "core_engineering",
+    "subtopic": "Mechanical Engineering",
+    "durationMinutes": 30,
+    "questionCount": 20,
+    "difficulty": "Medium",
+    "negativeMarking": 0.33,
+    "description": "Thermodynamics, Fluid mechanics, Strength of materials, and Machine design.",
+    "targetBranches": [
+      "ME"
+    ]
+  },
+  {
+    "id": "mock_product",
+    "title": "Tier-1 Product-Based Full Mock Test",
+    "category": "company_mock",
+    "subtopic": "Product Mock",
+    "durationMinutes": 60,
+    "questionCount": 40,
+    "difficulty": "Hard",
+    "negativeMarking": 0.25,
+    "description": "Simulates Amazon / Google technical screening: DSA complexities, System Design, Operating Systems, and Logical Agility.",
+    "targetBranches": [
+      "CSE",
+      "IT"
+    ]
+  },
+  {
+    "id": "mock_service",
+    "title": "Tier-2 Service-Based Full Mock (TCS Digital / Infosys DSE)",
+    "category": "company_mock",
+    "subtopic": "Service Mock",
+    "durationMinutes": 60,
+    "questionCount": 50,
+    "difficulty": "Medium",
+    "negativeMarking": 0.25,
+    "description": "Aptitude agility, Verbal ability, Data Interpretation, Core OOPs, and SQL Fundamentals.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "mock_psu",
+    "title": "Tier-3 Core Engineering / PSU Mock (ISRO / DRDO / BEL)",
+    "category": "company_mock",
+    "subtopic": "Core/PSU Mock",
+    "durationMinutes": 90,
+    "questionCount": 50,
+    "difficulty": "Hard",
+    "negativeMarking": 0.33,
+    "description": "Technical discipline depth, Engineering Mathematics, and Standard Quantitative GATE questions.",
+    "targetBranches": [
+      "All"
+    ]
+  },
+  {
+    "id": "mock_daily_quiz",
+    "title": "Daily Placement Quick Quiz",
+    "category": "company_mock",
+    "subtopic": "Daily Quiz",
+    "durationMinutes": 10,
+    "questionCount": 10,
+    "difficulty": "Medium",
+    "negativeMarking": 0,
+    "description": "10 rapid-fire randomized questions across Aptitude and Core CS to maintain your daily streak.",
+    "targetBranches": [
+      "All"
+    ]
+  }
+]

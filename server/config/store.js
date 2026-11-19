@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import bcrypt from 'bcryptjs';
 import { v4 as uuidv4 } from 'uuid';
+import { MongoClient } from 'mongodb';
 import { initialDSAProblems, initialAptitudeQuestions, defaultStudentProfile } from '../data/seedData.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +13,9 @@ const DB_FILE = isVercel
   ? path.join('/tmp', 'db.json')
   : path.join(__dirname, '..', 'data', 'db.json');
 
-class JSONStore {
+const DEFAULT_MONGO_URI = 'mongodb+srv://ganpat123:power@cluster0.qr2xvhf.mongodb.net/placement_readiness?retryWrites=true&w=majority';
+
+class MongoJSONStore {
   constructor() {
     this.data = {
       users: [],
@@ -23,10 +26,15 @@ class JSONStore {
       mock_interviews: [],
       readiness_scores: []
     };
-    this.init();
+    this.mongoClient = null;
+    this.mongoDb = null;
+    this.isMongoConnected = false;
+
+    // Load initial local data
+    this.initLocal();
   }
 
-  init() {
+  initLocal() {
     try {
       const dataDir = path.dirname(DB_FILE);
       if (!fs.existsSync(dataDir)) {
@@ -36,14 +44,14 @@ class JSONStore {
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf8');
         this.data = JSON.parse(raw);
-        console.log('📦 [Store] Loaded existing data from store.');
+        console.log('📦 [Store] Loaded local database cache.');
       } else {
         this.seedInitialData();
         this.save();
-        console.log('🌱 [Store] Seeded new database store with sample profile and questions.');
+        console.log('🌱 [Store] Seeded initial sample data.');
       }
     } catch (err) {
-      console.warn('⚠️ [Store] File access warning, using in-memory store:', err.message);
+      console.warn('⚠️ [Store] File access warning, using memory store:', err.message);
       this.seedInitialData();
       this.save();
     }
@@ -174,11 +182,127 @@ class JSONStore {
     ];
   }
 
+  async initMongo(uri = DEFAULT_MONGO_URI) {
+    try {
+      let finalUri = uri.trim();
+      // Ensure DB name is targeted properly
+      if (finalUri.endsWith('.mongodb.net/') || finalUri.endsWith('.mongodb.net')) {
+        finalUri = finalUri.replace(/\/?$/, '/placement_readiness?retryWrites=true&w=majority');
+      }
+
+      console.log(`📡 Connecting to MongoDB Atlas Cluster...`);
+      this.mongoClient = new MongoClient(finalUri);
+      await this.mongoClient.connect();
+
+      // Extract DB name or default to 'placement_readiness'
+      const dbMatch = finalUri.match(/\.mongodb\.net\/([^?]+)/);
+      const dbName = (dbMatch && dbMatch[1]) ? dbMatch[1] : 'placement_readiness';
+
+      this.mongoDb = this.mongoClient.db(dbName);
+      this.isMongoConnected = true;
+
+      console.log(`✅ [MongoDB Atlas] Connected to database: "${dbName}"`);
+
+      // Sync existing MongoDB collections into this.data
+      await this.syncFromMongo();
+
+      // Ensure primary dummy accounts are intact with password123
+      await this.ensureDemoAccounts();
+
+      return true;
+    } catch (err) {
+      console.error('❌ [MongoDB Atlas] Connection error:', err.message);
+      this.isMongoConnected = false;
+      return false;
+    }
+  }
+
+  async syncFromMongo() {
+    if (!this.mongoDb) return;
+    try {
+      const collections = [
+        'users',
+        'profiles',
+        'dsa_problems',
+        'aptitude_results',
+        'resume_analyses',
+        'mock_interviews',
+        'readiness_scores'
+      ];
+
+      for (const colName of collections) {
+        const docs = await this.mongoDb.collection(colName).find({}).toArray();
+        if (docs && docs.length > 0) {
+          this.data[colName] = docs.map(d => ({
+            ...d,
+            id: d.id || d._id?.toString()
+          }));
+        }
+      }
+
+      // Save synced data locally as resilient backup
+      this.save();
+      console.log(`🔄 [MongoDB Atlas] Synchronized all collections into memory store.`);
+    } catch (err) {
+      console.warn('⚠️ [MongoDB Atlas] Sync warning:', err.message);
+    }
+  }
+
+  async ensureDemoAccounts() {
+    if (!this.mongoDb) return;
+    try {
+      const salt = bcrypt.genSaltSync(10);
+      const password123Hash = bcrypt.hashSync('password123', salt);
+
+      const demoUsers = [
+        {
+          id: 'user_ganpat_23it17',
+          email: 'ganpat.singh@ecajmer.ac.in',
+          name: 'Ganpat Singh',
+          role: 'student',
+          password: password123Hash
+        },
+        {
+          id: 'admin_tpo_geca',
+          email: 'tpo@ecajmer.ac.in',
+          name: 'TPO Placement Cell',
+          role: 'tpo_admin',
+          password: password123Hash
+        }
+      ];
+
+      for (const u of demoUsers) {
+        const existing = await this.mongoDb.collection('users').findOne({
+          $or: [{ id: u.id }, { email: u.email }]
+        });
+        if (existing) {
+          await this.mongoDb.collection('users').updateOne(
+            { _id: existing._id },
+            { $set: { password: password123Hash, email: u.email, name: u.name, role: u.role, id: u.id } }
+          );
+        } else {
+          await this.mongoDb.collection('users').insertOne({
+            _id: u.id,
+            ...u,
+            createdAt: new Date().toISOString()
+          });
+        }
+      }
+
+      // Refresh memory users array
+      const freshUsers = await this.mongoDb.collection('users').find({}).toArray();
+      this.data.users = freshUsers.map(d => ({ ...d, id: d.id || d._id?.toString() }));
+      this.save();
+    } catch (err) {
+      console.warn('⚠️ [MongoDB Atlas] Error ensuring demo accounts:', err.message);
+    }
+  }
+
   save() {
     try {
       fs.writeFileSync(DB_FILE, JSON.stringify(this.data, null, 2), 'utf8');
     } catch (err) {
-      console.warn('⚠️ [Store] File write skipped in serverless environment:', err.message);
+      // In serverless / read-only environment, ignore write warnings
     }
   }
 
@@ -187,86 +311,145 @@ class JSONStore {
     if (!this.data[name]) {
       this.data[name] = [];
     }
-    const table = this.data[name];
     const self = this;
+    const getTable = () => self.data[name] || [];
+
+    const matchesFilter = (item, filter) => {
+      for (let key in filter) {
+        if (key === 'id') {
+          if (item.id !== filter[key] && item._id?.toString() !== filter[key]) return false;
+        } else if (key === '_id') {
+          if (item._id?.toString() !== filter[key]?.toString() && item.id !== filter[key]?.toString()) return false;
+        } else if (item[key] !== filter[key]) {
+          return false;
+        }
+      }
+      return true;
+    };
 
     return {
       find: (filter = {}) => {
-        return table.filter(item => {
-          for (let key in filter) {
-            if (item[key] !== filter[key]) return false;
-          }
-          return true;
-        });
+        return getTable().filter(item => matchesFilter(item, filter));
       },
+
       findOne: (filter = {}) => {
-        return table.find(item => {
-          for (let key in filter) {
-            if (item[key] !== filter[key]) return false;
-          }
-          return true;
-        }) || null;
+        return getTable().find(item => matchesFilter(item, filter)) || null;
       },
+
       findById: (id) => {
-        return table.find(item => item.id === id) || null;
+        return getTable().find(item => item.id === id || item._id === id || item._id?.toString() === id) || null;
       },
+
       create: (data) => {
+        const id = data.id || uuidv4();
         const newItem = {
-          id: data.id || uuidv4(),
+          _id: data._id || id,
+          id,
           createdAt: new Date().toISOString(),
           ...data
         };
-        table.push(newItem);
+        const arr = getTable();
+        arr.push(newItem);
         self.save();
+
+        // Write directly to MongoDB Atlas
+        if (self.mongoDb) {
+          self.mongoDb.collection(name).updateOne(
+            { $or: [{ id: newItem.id }, { _id: newItem.id }] },
+            { $set: newItem },
+            { upsert: true }
+          ).catch(err => {
+            console.error(`❌ [MongoDB Atlas] Error persisting to collection '${name}':`, err.message);
+          });
+        }
+
         return newItem;
       },
+
       findByIdAndUpdate: (id, updates) => {
-        const index = table.findIndex(item => item.id === id);
+        const arr = getTable();
+        const index = arr.findIndex(item => item.id === id || item._id === id || item._id?.toString() === id);
         if (index === -1) return null;
-        table[index] = { ...table[index], ...updates, updatedAt: new Date().toISOString() };
+
+        arr[index] = { ...arr[index], ...updates, updatedAt: new Date().toISOString() };
         self.save();
-        return table[index];
+
+        // Update directly in MongoDB Atlas
+        if (self.mongoDb) {
+          self.mongoDb.collection(name).updateOne(
+            { $or: [{ id }, { _id: id }] },
+            { $set: updates }
+          ).catch(err => {
+            console.error(`❌ [MongoDB Atlas] Error updating document in '${name}':`, err.message);
+          });
+        }
+
+        return arr[index];
       },
+
       findOneAndUpdate: (filter, updates) => {
-        const item = table.find(item => {
-          for (let key in filter) {
-            if (item[key] !== filter[key]) return false;
-          }
-          return true;
-        });
+        const arr = getTable();
+        const item = arr.find(item => matchesFilter(item, filter));
         if (!item) return null;
+
         Object.assign(item, updates, { updatedAt: new Date().toISOString() });
         self.save();
+
+        // Update in MongoDB Atlas
+        if (self.mongoDb) {
+          const query = { ...filter };
+          self.mongoDb.collection(name).updateOne(
+            query,
+            { $set: updates }
+          ).catch(err => {
+            console.error(`❌ [MongoDB Atlas] Error updating document in '${name}':`, err.message);
+          });
+        }
+
         return item;
       },
+
       findByIdAndDelete: (id) => {
-        const index = table.findIndex(item => item.id === id);
+        const arr = getTable();
+        const index = arr.findIndex(item => item.id === id || item._id === id || item._id?.toString() === id);
         if (index === -1) return null;
-        const [deleted] = table.splice(index, 1);
+
+        const [deleted] = arr.splice(index, 1);
         self.save();
+
+        // Delete from MongoDB Atlas
+        if (self.mongoDb) {
+          self.mongoDb.collection(name).deleteOne({
+            $or: [{ id }, { _id: id }]
+          }).catch(err => {
+            console.error(`❌ [MongoDB Atlas] Error deleting from collection '${name}':`, err.message);
+          });
+        }
+
         return deleted;
       },
+
       deleteMany: (filter = {}) => {
-        const initialLen = table.length;
-        this.data[name] = table.filter(item => {
-          for (let key in filter) {
-            if (item[key] === filter[key]) return false;
-          }
-          return true;
-        });
+        const arr = getTable();
+        const initialLen = arr.length;
+        self.data[name] = arr.filter(item => !matchesFilter(item, filter));
         self.save();
-        return { deletedCount: initialLen - this.data[name].length };
+
+        // DeleteMany in MongoDB Atlas
+        if (self.mongoDb) {
+          self.mongoDb.collection(name).deleteMany(filter).catch(err => {
+            console.error(`❌ [MongoDB Atlas] Error deleting multiple in '${name}':`, err.message);
+          });
+        }
+
+        return { deletedCount: initialLen - self.data[name].length };
       },
+
       countDocuments: (filter = {}) => {
-        return table.filter(item => {
-          for (let key in filter) {
-            if (item[key] !== filter[key]) return false;
-          }
-          return true;
-        }).length;
+        return getTable().filter(item => matchesFilter(item, filter)).length;
       }
     };
   }
 }
 
-export const store = new JSONStore();
+export const store = new MongoJSONStore();

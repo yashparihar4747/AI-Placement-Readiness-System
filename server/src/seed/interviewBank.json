@@ -1,0 +1,2025 @@
+[
+  {
+    "id": "iq_001",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how you would find the Top K elements in a streaming dataset of unknown size. (Variant 1)",
+    "idealAnswerOutline": "Use a min-heap of capacity K. For each new incoming element, if element > min-heap root, pop and push the new element. Time complexity O(N log K), space O(K).",
+    "rubricKeywords": [
+      "Min-heap",
+      "Priority Queue",
+      "O(N log K)",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "iq_002",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the fundamental difference between BFS and DFS in terms of memory consumption? (Variant 2)",
+    "idealAnswerOutline": "BFS uses a Queue storing an entire tree level (width O(W) or O(2^d)), whereas DFS uses a Stack storing nodes on the current path (height O(H) or O(log N)). In bushy trees, DFS consumes far less memory.",
+    "rubricKeywords": [
+      "Queue vs Stack",
+      "Width vs Height",
+      "Space complexity",
+      "Recursion stack"
+    ]
+  },
+  {
+    "id": "iq_003",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How does QuickSort compare with MergeSort in virtual memory / cache performance? (Variant 3)",
+    "idealAnswerOutline": "QuickSort possesses excellent spatial locality because it accesses contiguous array partitions in-place. MergeSort requires extra O(N) auxiliary buffer and frequent allocation, incurring higher cache misses.",
+    "rubricKeywords": [
+      "Spatial locality",
+      "Cache misses",
+      "In-place",
+      "Auxiliary memory"
+    ]
+  },
+  {
+    "id": "iq_004",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how a Hash Table handles collisions and what the worst-case lookup complexity is. (Variant 4)",
+    "idealAnswerOutline": "Collisions are resolved via Separate Chaining (linked lists or red-black trees) or Open Addressing (linear/quadratic probing). If all keys hash to the same bucket, worst case degrades to O(N).",
+    "rubricKeywords": [
+      "Separate chaining",
+      "Open addressing",
+      "Hash collision",
+      "O(N) worst case"
+    ]
+  },
+  {
+    "id": "iq_005",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you detect and locate the start of a cycle in a Singly Linked List? (Variant 5)",
+    "idealAnswerOutline": "Use Floyd's Tortoise and Hare algorithm. Fast pointer moves 2 steps, slow moves 1. Once they meet, reset one pointer to head and advance both 1 step at a time; their meeting point is the cycle origin.",
+    "rubricKeywords": [
+      "Floyd's algorithm",
+      "Tortoise and Hare",
+      "Cycle detection",
+      "Meeting point"
+    ]
+  },
+  {
+    "id": "iq_006",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how you would find the Top K elements in a streaming dataset of unknown size. (Variant 6)",
+    "idealAnswerOutline": "Use a min-heap of capacity K. For each new incoming element, if element > min-heap root, pop and push the new element. Time complexity O(N log K), space O(K).",
+    "rubricKeywords": [
+      "Min-heap",
+      "Priority Queue",
+      "O(N log K)",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "iq_007",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the fundamental difference between BFS and DFS in terms of memory consumption? (Variant 7)",
+    "idealAnswerOutline": "BFS uses a Queue storing an entire tree level (width O(W) or O(2^d)), whereas DFS uses a Stack storing nodes on the current path (height O(H) or O(log N)). In bushy trees, DFS consumes far less memory.",
+    "rubricKeywords": [
+      "Queue vs Stack",
+      "Width vs Height",
+      "Space complexity",
+      "Recursion stack"
+    ]
+  },
+  {
+    "id": "iq_008",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How does QuickSort compare with MergeSort in virtual memory / cache performance? (Variant 8)",
+    "idealAnswerOutline": "QuickSort possesses excellent spatial locality because it accesses contiguous array partitions in-place. MergeSort requires extra O(N) auxiliary buffer and frequent allocation, incurring higher cache misses.",
+    "rubricKeywords": [
+      "Spatial locality",
+      "Cache misses",
+      "In-place",
+      "Auxiliary memory"
+    ]
+  },
+  {
+    "id": "iq_009",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how a Hash Table handles collisions and what the worst-case lookup complexity is. (Variant 9)",
+    "idealAnswerOutline": "Collisions are resolved via Separate Chaining (linked lists or red-black trees) or Open Addressing (linear/quadratic probing). If all keys hash to the same bucket, worst case degrades to O(N).",
+    "rubricKeywords": [
+      "Separate chaining",
+      "Open addressing",
+      "Hash collision",
+      "O(N) worst case"
+    ]
+  },
+  {
+    "id": "iq_010",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you detect and locate the start of a cycle in a Singly Linked List? (Variant 10)",
+    "idealAnswerOutline": "Use Floyd's Tortoise and Hare algorithm. Fast pointer moves 2 steps, slow moves 1. Once they meet, reset one pointer to head and advance both 1 step at a time; their meeting point is the cycle origin.",
+    "rubricKeywords": [
+      "Floyd's algorithm",
+      "Tortoise and Hare",
+      "Cycle detection",
+      "Meeting point"
+    ]
+  },
+  {
+    "id": "iq_011",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how you would find the Top K elements in a streaming dataset of unknown size. (Variant 11)",
+    "idealAnswerOutline": "Use a min-heap of capacity K. For each new incoming element, if element > min-heap root, pop and push the new element. Time complexity O(N log K), space O(K).",
+    "rubricKeywords": [
+      "Min-heap",
+      "Priority Queue",
+      "O(N log K)",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "iq_012",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the fundamental difference between BFS and DFS in terms of memory consumption? (Variant 12)",
+    "idealAnswerOutline": "BFS uses a Queue storing an entire tree level (width O(W) or O(2^d)), whereas DFS uses a Stack storing nodes on the current path (height O(H) or O(log N)). In bushy trees, DFS consumes far less memory.",
+    "rubricKeywords": [
+      "Queue vs Stack",
+      "Width vs Height",
+      "Space complexity",
+      "Recursion stack"
+    ]
+  },
+  {
+    "id": "iq_013",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How does QuickSort compare with MergeSort in virtual memory / cache performance? (Variant 13)",
+    "idealAnswerOutline": "QuickSort possesses excellent spatial locality because it accesses contiguous array partitions in-place. MergeSort requires extra O(N) auxiliary buffer and frequent allocation, incurring higher cache misses.",
+    "rubricKeywords": [
+      "Spatial locality",
+      "Cache misses",
+      "In-place",
+      "Auxiliary memory"
+    ]
+  },
+  {
+    "id": "iq_014",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how a Hash Table handles collisions and what the worst-case lookup complexity is. (Variant 14)",
+    "idealAnswerOutline": "Collisions are resolved via Separate Chaining (linked lists or red-black trees) or Open Addressing (linear/quadratic probing). If all keys hash to the same bucket, worst case degrades to O(N).",
+    "rubricKeywords": [
+      "Separate chaining",
+      "Open addressing",
+      "Hash collision",
+      "O(N) worst case"
+    ]
+  },
+  {
+    "id": "iq_015",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you detect and locate the start of a cycle in a Singly Linked List? (Variant 15)",
+    "idealAnswerOutline": "Use Floyd's Tortoise and Hare algorithm. Fast pointer moves 2 steps, slow moves 1. Once they meet, reset one pointer to head and advance both 1 step at a time; their meeting point is the cycle origin.",
+    "rubricKeywords": [
+      "Floyd's algorithm",
+      "Tortoise and Hare",
+      "Cycle detection",
+      "Meeting point"
+    ]
+  },
+  {
+    "id": "iq_016",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how you would find the Top K elements in a streaming dataset of unknown size. (Variant 16)",
+    "idealAnswerOutline": "Use a min-heap of capacity K. For each new incoming element, if element > min-heap root, pop and push the new element. Time complexity O(N log K), space O(K).",
+    "rubricKeywords": [
+      "Min-heap",
+      "Priority Queue",
+      "O(N log K)",
+      "Streaming"
+    ]
+  },
+  {
+    "id": "iq_017",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the fundamental difference between BFS and DFS in terms of memory consumption? (Variant 17)",
+    "idealAnswerOutline": "BFS uses a Queue storing an entire tree level (width O(W) or O(2^d)), whereas DFS uses a Stack storing nodes on the current path (height O(H) or O(log N)). In bushy trees, DFS consumes far less memory.",
+    "rubricKeywords": [
+      "Queue vs Stack",
+      "Width vs Height",
+      "Space complexity",
+      "Recursion stack"
+    ]
+  },
+  {
+    "id": "iq_018",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How does QuickSort compare with MergeSort in virtual memory / cache performance? (Variant 18)",
+    "idealAnswerOutline": "QuickSort possesses excellent spatial locality because it accesses contiguous array partitions in-place. MergeSort requires extra O(N) auxiliary buffer and frequent allocation, incurring higher cache misses.",
+    "rubricKeywords": [
+      "Spatial locality",
+      "Cache misses",
+      "In-place",
+      "Auxiliary memory"
+    ]
+  },
+  {
+    "id": "iq_019",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain how a Hash Table handles collisions and what the worst-case lookup complexity is. (Variant 19)",
+    "idealAnswerOutline": "Collisions are resolved via Separate Chaining (linked lists or red-black trees) or Open Addressing (linear/quadratic probing). If all keys hash to the same bucket, worst case degrades to O(N).",
+    "rubricKeywords": [
+      "Separate chaining",
+      "Open addressing",
+      "Hash collision",
+      "O(N) worst case"
+    ]
+  },
+  {
+    "id": "iq_020",
+    "category": "DSA & Algorithms",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you detect and locate the start of a cycle in a Singly Linked List? (Variant 20)",
+    "idealAnswerOutline": "Use Floyd's Tortoise and Hare algorithm. Fast pointer moves 2 steps, slow moves 1. Once they meet, reset one pointer to head and advance both 1 step at a time; their meeting point is the cycle origin.",
+    "rubricKeywords": [
+      "Floyd's algorithm",
+      "Tortoise and Hare",
+      "Cycle detection",
+      "Meeting point"
+    ]
+  },
+  {
+    "id": "iq_021",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the difference between a process and a thread? (OS Focus 1)",
+    "idealAnswerOutline": "A process is an isolated execution environment with dedicated address space and resources. A thread is a lightweight unit of execution sharing memory space and file descriptors within a parent process.",
+    "rubricKeywords": [
+      "Address space",
+      "Context switch",
+      "Shared memory",
+      "Thread safety"
+    ]
+  },
+  {
+    "id": "iq_022",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain Deadlock and the 4 Coffman conditions required for it to occur. (OS Focus 2)",
+    "idealAnswerOutline": "Deadlock is a state where processes are permanently blocked waiting for resources held by each other. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "rubricKeywords": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait",
+      "Resource allocation graph"
+    ]
+  },
+  {
+    "id": "iq_023",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "How does Virtual Memory work and what triggers a Page Fault? (OS Focus 3)",
+    "idealAnswerOutline": "Virtual memory decouples logical address space from physical RAM using page tables and MMU hardware. When a program accesses a virtual page marked invalid in the page table, the CPU issues a Page Fault interrupt to load it from swap.",
+    "rubricKeywords": [
+      "MMU",
+      "Page table",
+      "Page fault interrupt",
+      "Swapping"
+    ]
+  },
+  {
+    "id": "iq_024",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Compare user-level threads and kernel-level threads. (OS Focus 4)",
+    "idealAnswerOutline": "User-level threads are managed by user-space runtime libraries without kernel awareness, offering fast context switches but blocking on I/O. Kernel threads are scheduled natively by the OS across multiple CPU cores.",
+    "rubricKeywords": [
+      "User space",
+      "Kernel space",
+      "Multicore scheduling",
+      "Blocking I/O"
+    ]
+  },
+  {
+    "id": "iq_025",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the difference between a process and a thread? (OS Focus 5)",
+    "idealAnswerOutline": "A process is an isolated execution environment with dedicated address space and resources. A thread is a lightweight unit of execution sharing memory space and file descriptors within a parent process.",
+    "rubricKeywords": [
+      "Address space",
+      "Context switch",
+      "Shared memory",
+      "Thread safety"
+    ]
+  },
+  {
+    "id": "iq_026",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain Deadlock and the 4 Coffman conditions required for it to occur. (OS Focus 6)",
+    "idealAnswerOutline": "Deadlock is a state where processes are permanently blocked waiting for resources held by each other. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "rubricKeywords": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait",
+      "Resource allocation graph"
+    ]
+  },
+  {
+    "id": "iq_027",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "How does Virtual Memory work and what triggers a Page Fault? (OS Focus 7)",
+    "idealAnswerOutline": "Virtual memory decouples logical address space from physical RAM using page tables and MMU hardware. When a program accesses a virtual page marked invalid in the page table, the CPU issues a Page Fault interrupt to load it from swap.",
+    "rubricKeywords": [
+      "MMU",
+      "Page table",
+      "Page fault interrupt",
+      "Swapping"
+    ]
+  },
+  {
+    "id": "iq_028",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Compare user-level threads and kernel-level threads. (OS Focus 8)",
+    "idealAnswerOutline": "User-level threads are managed by user-space runtime libraries without kernel awareness, offering fast context switches but blocking on I/O. Kernel threads are scheduled natively by the OS across multiple CPU cores.",
+    "rubricKeywords": [
+      "User space",
+      "Kernel space",
+      "Multicore scheduling",
+      "Blocking I/O"
+    ]
+  },
+  {
+    "id": "iq_029",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the difference between a process and a thread? (OS Focus 9)",
+    "idealAnswerOutline": "A process is an isolated execution environment with dedicated address space and resources. A thread is a lightweight unit of execution sharing memory space and file descriptors within a parent process.",
+    "rubricKeywords": [
+      "Address space",
+      "Context switch",
+      "Shared memory",
+      "Thread safety"
+    ]
+  },
+  {
+    "id": "iq_030",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain Deadlock and the 4 Coffman conditions required for it to occur. (OS Focus 10)",
+    "idealAnswerOutline": "Deadlock is a state where processes are permanently blocked waiting for resources held by each other. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "rubricKeywords": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait",
+      "Resource allocation graph"
+    ]
+  },
+  {
+    "id": "iq_031",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "How does Virtual Memory work and what triggers a Page Fault? (OS Focus 11)",
+    "idealAnswerOutline": "Virtual memory decouples logical address space from physical RAM using page tables and MMU hardware. When a program accesses a virtual page marked invalid in the page table, the CPU issues a Page Fault interrupt to load it from swap.",
+    "rubricKeywords": [
+      "MMU",
+      "Page table",
+      "Page fault interrupt",
+      "Swapping"
+    ]
+  },
+  {
+    "id": "iq_032",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Compare user-level threads and kernel-level threads. (OS Focus 12)",
+    "idealAnswerOutline": "User-level threads are managed by user-space runtime libraries without kernel awareness, offering fast context switches but blocking on I/O. Kernel threads are scheduled natively by the OS across multiple CPU cores.",
+    "rubricKeywords": [
+      "User space",
+      "Kernel space",
+      "Multicore scheduling",
+      "Blocking I/O"
+    ]
+  },
+  {
+    "id": "iq_033",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the difference between a process and a thread? (OS Focus 13)",
+    "idealAnswerOutline": "A process is an isolated execution environment with dedicated address space and resources. A thread is a lightweight unit of execution sharing memory space and file descriptors within a parent process.",
+    "rubricKeywords": [
+      "Address space",
+      "Context switch",
+      "Shared memory",
+      "Thread safety"
+    ]
+  },
+  {
+    "id": "iq_034",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain Deadlock and the 4 Coffman conditions required for it to occur. (OS Focus 14)",
+    "idealAnswerOutline": "Deadlock is a state where processes are permanently blocked waiting for resources held by each other. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "rubricKeywords": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait",
+      "Resource allocation graph"
+    ]
+  },
+  {
+    "id": "iq_035",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "How does Virtual Memory work and what triggers a Page Fault? (OS Focus 15)",
+    "idealAnswerOutline": "Virtual memory decouples logical address space from physical RAM using page tables and MMU hardware. When a program accesses a virtual page marked invalid in the page table, the CPU issues a Page Fault interrupt to load it from swap.",
+    "rubricKeywords": [
+      "MMU",
+      "Page table",
+      "Page fault interrupt",
+      "Swapping"
+    ]
+  },
+  {
+    "id": "iq_036",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Compare user-level threads and kernel-level threads. (OS Focus 16)",
+    "idealAnswerOutline": "User-level threads are managed by user-space runtime libraries without kernel awareness, offering fast context switches but blocking on I/O. Kernel threads are scheduled natively by the OS across multiple CPU cores.",
+    "rubricKeywords": [
+      "User space",
+      "Kernel space",
+      "Multicore scheduling",
+      "Blocking I/O"
+    ]
+  },
+  {
+    "id": "iq_037",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "What is the difference between a process and a thread? (OS Focus 17)",
+    "idealAnswerOutline": "A process is an isolated execution environment with dedicated address space and resources. A thread is a lightweight unit of execution sharing memory space and file descriptors within a parent process.",
+    "rubricKeywords": [
+      "Address space",
+      "Context switch",
+      "Shared memory",
+      "Thread safety"
+    ]
+  },
+  {
+    "id": "iq_038",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain Deadlock and the 4 Coffman conditions required for it to occur. (OS Focus 18)",
+    "idealAnswerOutline": "Deadlock is a state where processes are permanently blocked waiting for resources held by each other. Conditions: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "rubricKeywords": [
+      "Mutual exclusion",
+      "Hold and wait",
+      "Circular wait",
+      "Resource allocation graph"
+    ]
+  },
+  {
+    "id": "iq_039",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "How does Virtual Memory work and what triggers a Page Fault? (OS Focus 19)",
+    "idealAnswerOutline": "Virtual memory decouples logical address space from physical RAM using page tables and MMU hardware. When a program accesses a virtual page marked invalid in the page table, the CPU issues a Page Fault interrupt to load it from swap.",
+    "rubricKeywords": [
+      "MMU",
+      "Page table",
+      "Page fault interrupt",
+      "Swapping"
+    ]
+  },
+  {
+    "id": "iq_040",
+    "category": "Operating Systems",
+    "roleTier": "Tier-1 Product",
+    "question": "Compare user-level threads and kernel-level threads. (OS Focus 20)",
+    "idealAnswerOutline": "User-level threads are managed by user-space runtime libraries without kernel awareness, offering fast context switches but blocking on I/O. Kernel threads are scheduled natively by the OS across multiple CPU cores.",
+    "rubricKeywords": [
+      "User space",
+      "Kernel space",
+      "Multicore scheduling",
+      "Blocking I/O"
+    ]
+  },
+  {
+    "id": "iq_041",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain ACID properties with a concrete banking transaction example. (DBMS Focus 1)",
+    "idealAnswerOutline": "Atomicity: debit and credit both succeed or both fail. Consistency: total system balance preserved before and after. Isolation: concurrent transfers don't see uncommitted state. Durability: committed transfer persists even after sudden power failure.",
+    "rubricKeywords": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ]
+  },
+  {
+    "id": "iq_042",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "What is the difference between Clustered and Non-Clustered Indexes? (DBMS Focus 2)",
+    "idealAnswerOutline": "A clustered index physically sorts table rows on disk (only 1 per table, usually primary key). A non-clustered index stores sorted index keys with pointers to data rows (multiple allowed).",
+    "rubricKeywords": [
+      "Physical ordering",
+      "B+ Tree leaf pointer",
+      "Primary key",
+      "Table scan"
+    ]
+  },
+  {
+    "id": "iq_043",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "When would you choose MongoDB (NoSQL) over MySQL (RDBMS)? (DBMS Focus 3)",
+    "idealAnswerOutline": "Choose MongoDB when schema evolves rapidly, documents are naturally nested, or horizontal sharding across commodity servers is required. Choose MySQL when strict ACID, complex multi-table joins, and rigid relational integrity are paramount.",
+    "rubricKeywords": [
+      "ACID compliance",
+      "Schema flexibility",
+      "Horizontal scaling",
+      "Relational joins"
+    ]
+  },
+  {
+    "id": "iq_044",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain database indexing tradeoffs. Why not index every column? (DBMS Focus 4)",
+    "idealAnswerOutline": "Indexes speed up SELECT queries via B+ tree searches, but consume additional disk memory and drastically slow down INSERT, UPDATE, and DELETE operations due to index tree rebalancing.",
+    "rubricKeywords": [
+      "Write amplification",
+      "B+ Tree rebalance",
+      "Storage overhead",
+      "Query optimization"
+    ]
+  },
+  {
+    "id": "iq_045",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain ACID properties with a concrete banking transaction example. (DBMS Focus 5)",
+    "idealAnswerOutline": "Atomicity: debit and credit both succeed or both fail. Consistency: total system balance preserved before and after. Isolation: concurrent transfers don't see uncommitted state. Durability: committed transfer persists even after sudden power failure.",
+    "rubricKeywords": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ]
+  },
+  {
+    "id": "iq_046",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "What is the difference between Clustered and Non-Clustered Indexes? (DBMS Focus 6)",
+    "idealAnswerOutline": "A clustered index physically sorts table rows on disk (only 1 per table, usually primary key). A non-clustered index stores sorted index keys with pointers to data rows (multiple allowed).",
+    "rubricKeywords": [
+      "Physical ordering",
+      "B+ Tree leaf pointer",
+      "Primary key",
+      "Table scan"
+    ]
+  },
+  {
+    "id": "iq_047",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "When would you choose MongoDB (NoSQL) over MySQL (RDBMS)? (DBMS Focus 7)",
+    "idealAnswerOutline": "Choose MongoDB when schema evolves rapidly, documents are naturally nested, or horizontal sharding across commodity servers is required. Choose MySQL when strict ACID, complex multi-table joins, and rigid relational integrity are paramount.",
+    "rubricKeywords": [
+      "ACID compliance",
+      "Schema flexibility",
+      "Horizontal scaling",
+      "Relational joins"
+    ]
+  },
+  {
+    "id": "iq_048",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain database indexing tradeoffs. Why not index every column? (DBMS Focus 8)",
+    "idealAnswerOutline": "Indexes speed up SELECT queries via B+ tree searches, but consume additional disk memory and drastically slow down INSERT, UPDATE, and DELETE operations due to index tree rebalancing.",
+    "rubricKeywords": [
+      "Write amplification",
+      "B+ Tree rebalance",
+      "Storage overhead",
+      "Query optimization"
+    ]
+  },
+  {
+    "id": "iq_049",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain ACID properties with a concrete banking transaction example. (DBMS Focus 9)",
+    "idealAnswerOutline": "Atomicity: debit and credit both succeed or both fail. Consistency: total system balance preserved before and after. Isolation: concurrent transfers don't see uncommitted state. Durability: committed transfer persists even after sudden power failure.",
+    "rubricKeywords": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ]
+  },
+  {
+    "id": "iq_050",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "What is the difference between Clustered and Non-Clustered Indexes? (DBMS Focus 10)",
+    "idealAnswerOutline": "A clustered index physically sorts table rows on disk (only 1 per table, usually primary key). A non-clustered index stores sorted index keys with pointers to data rows (multiple allowed).",
+    "rubricKeywords": [
+      "Physical ordering",
+      "B+ Tree leaf pointer",
+      "Primary key",
+      "Table scan"
+    ]
+  },
+  {
+    "id": "iq_051",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "When would you choose MongoDB (NoSQL) over MySQL (RDBMS)? (DBMS Focus 11)",
+    "idealAnswerOutline": "Choose MongoDB when schema evolves rapidly, documents are naturally nested, or horizontal sharding across commodity servers is required. Choose MySQL when strict ACID, complex multi-table joins, and rigid relational integrity are paramount.",
+    "rubricKeywords": [
+      "ACID compliance",
+      "Schema flexibility",
+      "Horizontal scaling",
+      "Relational joins"
+    ]
+  },
+  {
+    "id": "iq_052",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain database indexing tradeoffs. Why not index every column? (DBMS Focus 12)",
+    "idealAnswerOutline": "Indexes speed up SELECT queries via B+ tree searches, but consume additional disk memory and drastically slow down INSERT, UPDATE, and DELETE operations due to index tree rebalancing.",
+    "rubricKeywords": [
+      "Write amplification",
+      "B+ Tree rebalance",
+      "Storage overhead",
+      "Query optimization"
+    ]
+  },
+  {
+    "id": "iq_053",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain ACID properties with a concrete banking transaction example. (DBMS Focus 13)",
+    "idealAnswerOutline": "Atomicity: debit and credit both succeed or both fail. Consistency: total system balance preserved before and after. Isolation: concurrent transfers don't see uncommitted state. Durability: committed transfer persists even after sudden power failure.",
+    "rubricKeywords": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ]
+  },
+  {
+    "id": "iq_054",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "What is the difference between Clustered and Non-Clustered Indexes? (DBMS Focus 14)",
+    "idealAnswerOutline": "A clustered index physically sorts table rows on disk (only 1 per table, usually primary key). A non-clustered index stores sorted index keys with pointers to data rows (multiple allowed).",
+    "rubricKeywords": [
+      "Physical ordering",
+      "B+ Tree leaf pointer",
+      "Primary key",
+      "Table scan"
+    ]
+  },
+  {
+    "id": "iq_055",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "When would you choose MongoDB (NoSQL) over MySQL (RDBMS)? (DBMS Focus 15)",
+    "idealAnswerOutline": "Choose MongoDB when schema evolves rapidly, documents are naturally nested, or horizontal sharding across commodity servers is required. Choose MySQL when strict ACID, complex multi-table joins, and rigid relational integrity are paramount.",
+    "rubricKeywords": [
+      "ACID compliance",
+      "Schema flexibility",
+      "Horizontal scaling",
+      "Relational joins"
+    ]
+  },
+  {
+    "id": "iq_056",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain database indexing tradeoffs. Why not index every column? (DBMS Focus 16)",
+    "idealAnswerOutline": "Indexes speed up SELECT queries via B+ tree searches, but consume additional disk memory and drastically slow down INSERT, UPDATE, and DELETE operations due to index tree rebalancing.",
+    "rubricKeywords": [
+      "Write amplification",
+      "B+ Tree rebalance",
+      "Storage overhead",
+      "Query optimization"
+    ]
+  },
+  {
+    "id": "iq_057",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain ACID properties with a concrete banking transaction example. (DBMS Focus 17)",
+    "idealAnswerOutline": "Atomicity: debit and credit both succeed or both fail. Consistency: total system balance preserved before and after. Isolation: concurrent transfers don't see uncommitted state. Durability: committed transfer persists even after sudden power failure.",
+    "rubricKeywords": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ]
+  },
+  {
+    "id": "iq_058",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "What is the difference between Clustered and Non-Clustered Indexes? (DBMS Focus 18)",
+    "idealAnswerOutline": "A clustered index physically sorts table rows on disk (only 1 per table, usually primary key). A non-clustered index stores sorted index keys with pointers to data rows (multiple allowed).",
+    "rubricKeywords": [
+      "Physical ordering",
+      "B+ Tree leaf pointer",
+      "Primary key",
+      "Table scan"
+    ]
+  },
+  {
+    "id": "iq_059",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "When would you choose MongoDB (NoSQL) over MySQL (RDBMS)? (DBMS Focus 19)",
+    "idealAnswerOutline": "Choose MongoDB when schema evolves rapidly, documents are naturally nested, or horizontal sharding across commodity servers is required. Choose MySQL when strict ACID, complex multi-table joins, and rigid relational integrity are paramount.",
+    "rubricKeywords": [
+      "ACID compliance",
+      "Schema flexibility",
+      "Horizontal scaling",
+      "Relational joins"
+    ]
+  },
+  {
+    "id": "iq_060",
+    "category": "DBMS & SQL",
+    "roleTier": "Tier-2 Service",
+    "question": "Explain database indexing tradeoffs. Why not index every column? (DBMS Focus 20)",
+    "idealAnswerOutline": "Indexes speed up SELECT queries via B+ tree searches, but consume additional disk memory and drastically slow down INSERT, UPDATE, and DELETE operations due to index tree rebalancing.",
+    "rubricKeywords": [
+      "Write amplification",
+      "B+ Tree rebalance",
+      "Storage overhead",
+      "Query optimization"
+    ]
+  },
+  {
+    "id": "iq_061",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 1)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_062",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 2)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_063",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 3)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_064",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 4)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_065",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 5)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_066",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 6)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_067",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 7)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_068",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 8)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_069",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 9)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_070",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 10)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_071",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 11)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_072",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 12)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_073",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 13)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_074",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Compare TCP and UDP protocols. (Network Focus 14)",
+    "idealAnswerOutline": "TCP is connection-oriented, reliable, ordered, and features congestion and flow control. UDP is connectionless, lightweight, and unordered, preferred for low-latency streaming and real-time gaming.",
+    "rubricKeywords": [
+      "Connection-oriented",
+      "Packet loss recovery",
+      "Flow control",
+      "UDP latency"
+    ]
+  },
+  {
+    "id": "iq_075",
+    "category": "Computer Networks",
+    "roleTier": "Tier-2 Service",
+    "question": "Describe the steps that occur when you type a URL into a browser and press Enter. (Network Focus 15)",
+    "idealAnswerOutline": "DNS lookup (browser, OS, resolver, root/TLD) resolves domain to IP. Browser initiates TCP 3-way handshake (SYN, SYN-ACK, ACK), then TLS handshake if HTTPS. Browser sends HTTP GET. Web server processes request and returns HTTP response (HTML/CSS/JS). Browser engine renders DOM.",
+    "rubricKeywords": [
+      "DNS resolution",
+      "TCP 3-way handshake",
+      "TLS negotiation",
+      "HTTP GET",
+      "DOM rendering"
+    ]
+  },
+  {
+    "id": "iq_076",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain the Node.js event loop and asynchronous non-blocking I/O model. (Architecture 1)",
+    "idealAnswerOutline": "Node.js runs single-threaded JavaScript using libuv. Heavy I/O (network, file system) is delegated to OS kernel or libuv thread pool. When complete, callbacks enter task queues (timers, poll, check) and are processed by event loop.",
+    "rubricKeywords": [
+      "libuv",
+      "Single-threaded event loop",
+      "Non-blocking I/O",
+      "Microtask queue"
+    ]
+  },
+  {
+    "id": "iq_077",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How do React reconciliation and the Virtual DOM improve UI performance? (Architecture 2)",
+    "idealAnswerOutline": "React creates an in-memory Virtual DOM tree. On state changes, it generates a new tree, computes minimum difference (diffing algorithm in O(N)), and batches DOM updates to minimize expensive real DOM repaints.",
+    "rubricKeywords": [
+      "Virtual DOM",
+      "Diffing algorithm",
+      "Reconciliation",
+      "Batching DOM updates"
+    ]
+  },
+  {
+    "id": "iq_078",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain REST API idempotency and why GET, PUT, and DELETE are idempotent while POST is not. (Architecture 3)",
+    "idealAnswerOutline": "An operation is idempotent if executing it multiple times produces the exact same server resource state. Multiple identical PUTs replace the same entity; multiple POSTs create multiple new records.",
+    "rubricKeywords": [
+      "Idempotent",
+      "PUT vs POST",
+      "HTTP methods",
+      "State mutability"
+    ]
+  },
+  {
+    "id": "iq_079",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you design a scalable rate limiter for an API gateway? (Architecture 4)",
+    "idealAnswerOutline": "Use Token Bucket or Leaky Bucket algorithm backed by Redis (sliding window log or atomic INCR with EXPIRE). This guarantees bounded requests per IP/user across distributed server instances with sub-millisecond overhead.",
+    "rubricKeywords": [
+      "Token Bucket",
+      "Redis",
+      "Sliding window",
+      "Distributed rate limiting"
+    ]
+  },
+  {
+    "id": "iq_080",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain the Node.js event loop and asynchronous non-blocking I/O model. (Architecture 5)",
+    "idealAnswerOutline": "Node.js runs single-threaded JavaScript using libuv. Heavy I/O (network, file system) is delegated to OS kernel or libuv thread pool. When complete, callbacks enter task queues (timers, poll, check) and are processed by event loop.",
+    "rubricKeywords": [
+      "libuv",
+      "Single-threaded event loop",
+      "Non-blocking I/O",
+      "Microtask queue"
+    ]
+  },
+  {
+    "id": "iq_081",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How do React reconciliation and the Virtual DOM improve UI performance? (Architecture 6)",
+    "idealAnswerOutline": "React creates an in-memory Virtual DOM tree. On state changes, it generates a new tree, computes minimum difference (diffing algorithm in O(N)), and batches DOM updates to minimize expensive real DOM repaints.",
+    "rubricKeywords": [
+      "Virtual DOM",
+      "Diffing algorithm",
+      "Reconciliation",
+      "Batching DOM updates"
+    ]
+  },
+  {
+    "id": "iq_082",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain REST API idempotency and why GET, PUT, and DELETE are idempotent while POST is not. (Architecture 7)",
+    "idealAnswerOutline": "An operation is idempotent if executing it multiple times produces the exact same server resource state. Multiple identical PUTs replace the same entity; multiple POSTs create multiple new records.",
+    "rubricKeywords": [
+      "Idempotent",
+      "PUT vs POST",
+      "HTTP methods",
+      "State mutability"
+    ]
+  },
+  {
+    "id": "iq_083",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you design a scalable rate limiter for an API gateway? (Architecture 8)",
+    "idealAnswerOutline": "Use Token Bucket or Leaky Bucket algorithm backed by Redis (sliding window log or atomic INCR with EXPIRE). This guarantees bounded requests per IP/user across distributed server instances with sub-millisecond overhead.",
+    "rubricKeywords": [
+      "Token Bucket",
+      "Redis",
+      "Sliding window",
+      "Distributed rate limiting"
+    ]
+  },
+  {
+    "id": "iq_084",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain the Node.js event loop and asynchronous non-blocking I/O model. (Architecture 9)",
+    "idealAnswerOutline": "Node.js runs single-threaded JavaScript using libuv. Heavy I/O (network, file system) is delegated to OS kernel or libuv thread pool. When complete, callbacks enter task queues (timers, poll, check) and are processed by event loop.",
+    "rubricKeywords": [
+      "libuv",
+      "Single-threaded event loop",
+      "Non-blocking I/O",
+      "Microtask queue"
+    ]
+  },
+  {
+    "id": "iq_085",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How do React reconciliation and the Virtual DOM improve UI performance? (Architecture 10)",
+    "idealAnswerOutline": "React creates an in-memory Virtual DOM tree. On state changes, it generates a new tree, computes minimum difference (diffing algorithm in O(N)), and batches DOM updates to minimize expensive real DOM repaints.",
+    "rubricKeywords": [
+      "Virtual DOM",
+      "Diffing algorithm",
+      "Reconciliation",
+      "Batching DOM updates"
+    ]
+  },
+  {
+    "id": "iq_086",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain REST API idempotency and why GET, PUT, and DELETE are idempotent while POST is not. (Architecture 11)",
+    "idealAnswerOutline": "An operation is idempotent if executing it multiple times produces the exact same server resource state. Multiple identical PUTs replace the same entity; multiple POSTs create multiple new records.",
+    "rubricKeywords": [
+      "Idempotent",
+      "PUT vs POST",
+      "HTTP methods",
+      "State mutability"
+    ]
+  },
+  {
+    "id": "iq_087",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you design a scalable rate limiter for an API gateway? (Architecture 12)",
+    "idealAnswerOutline": "Use Token Bucket or Leaky Bucket algorithm backed by Redis (sliding window log or atomic INCR with EXPIRE). This guarantees bounded requests per IP/user across distributed server instances with sub-millisecond overhead.",
+    "rubricKeywords": [
+      "Token Bucket",
+      "Redis",
+      "Sliding window",
+      "Distributed rate limiting"
+    ]
+  },
+  {
+    "id": "iq_088",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain the Node.js event loop and asynchronous non-blocking I/O model. (Architecture 13)",
+    "idealAnswerOutline": "Node.js runs single-threaded JavaScript using libuv. Heavy I/O (network, file system) is delegated to OS kernel or libuv thread pool. When complete, callbacks enter task queues (timers, poll, check) and are processed by event loop.",
+    "rubricKeywords": [
+      "libuv",
+      "Single-threaded event loop",
+      "Non-blocking I/O",
+      "Microtask queue"
+    ]
+  },
+  {
+    "id": "iq_089",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How do React reconciliation and the Virtual DOM improve UI performance? (Architecture 14)",
+    "idealAnswerOutline": "React creates an in-memory Virtual DOM tree. On state changes, it generates a new tree, computes minimum difference (diffing algorithm in O(N)), and batches DOM updates to minimize expensive real DOM repaints.",
+    "rubricKeywords": [
+      "Virtual DOM",
+      "Diffing algorithm",
+      "Reconciliation",
+      "Batching DOM updates"
+    ]
+  },
+  {
+    "id": "iq_090",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain REST API idempotency and why GET, PUT, and DELETE are idempotent while POST is not. (Architecture 15)",
+    "idealAnswerOutline": "An operation is idempotent if executing it multiple times produces the exact same server resource state. Multiple identical PUTs replace the same entity; multiple POSTs create multiple new records.",
+    "rubricKeywords": [
+      "Idempotent",
+      "PUT vs POST",
+      "HTTP methods",
+      "State mutability"
+    ]
+  },
+  {
+    "id": "iq_091",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you design a scalable rate limiter for an API gateway? (Architecture 16)",
+    "idealAnswerOutline": "Use Token Bucket or Leaky Bucket algorithm backed by Redis (sliding window log or atomic INCR with EXPIRE). This guarantees bounded requests per IP/user across distributed server instances with sub-millisecond overhead.",
+    "rubricKeywords": [
+      "Token Bucket",
+      "Redis",
+      "Sliding window",
+      "Distributed rate limiting"
+    ]
+  },
+  {
+    "id": "iq_092",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain the Node.js event loop and asynchronous non-blocking I/O model. (Architecture 17)",
+    "idealAnswerOutline": "Node.js runs single-threaded JavaScript using libuv. Heavy I/O (network, file system) is delegated to OS kernel or libuv thread pool. When complete, callbacks enter task queues (timers, poll, check) and are processed by event loop.",
+    "rubricKeywords": [
+      "libuv",
+      "Single-threaded event loop",
+      "Non-blocking I/O",
+      "Microtask queue"
+    ]
+  },
+  {
+    "id": "iq_093",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How do React reconciliation and the Virtual DOM improve UI performance? (Architecture 18)",
+    "idealAnswerOutline": "React creates an in-memory Virtual DOM tree. On state changes, it generates a new tree, computes minimum difference (diffing algorithm in O(N)), and batches DOM updates to minimize expensive real DOM repaints.",
+    "rubricKeywords": [
+      "Virtual DOM",
+      "Diffing algorithm",
+      "Reconciliation",
+      "Batching DOM updates"
+    ]
+  },
+  {
+    "id": "iq_094",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "Explain REST API idempotency and why GET, PUT, and DELETE are idempotent while POST is not. (Architecture 19)",
+    "idealAnswerOutline": "An operation is idempotent if executing it multiple times produces the exact same server resource state. Multiple identical PUTs replace the same entity; multiple POSTs create multiple new records.",
+    "rubricKeywords": [
+      "Idempotent",
+      "PUT vs POST",
+      "HTTP methods",
+      "State mutability"
+    ]
+  },
+  {
+    "id": "iq_095",
+    "category": "Web Development & System Design",
+    "roleTier": "Tier-1 Product",
+    "question": "How would you design a scalable rate limiter for an API gateway? (Architecture 20)",
+    "idealAnswerOutline": "Use Token Bucket or Leaky Bucket algorithm backed by Redis (sliding window log or atomic INCR with EXPIRE). This guarantees bounded requests per IP/user across distributed server instances with sub-millisecond overhead.",
+    "rubricKeywords": [
+      "Token Bucket",
+      "Redis",
+      "Sliding window",
+      "Distributed rate limiting"
+    ]
+  },
+  {
+    "id": "iq_096",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 1)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_097",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 2)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_098",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 3)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_099",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 4)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_100",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 5)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_101",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 6)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_102",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 7)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_103",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 8)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_104",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 9)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_105",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 10)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_106",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 11)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_107",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 12)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_108",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 13)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_109",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 14)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_110",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 15)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_111",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 16)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_112",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 17)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_113",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 18)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_114",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 19)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_115",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 20)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_116",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 21)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_117",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 22)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_118",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 23)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_119",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 24)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_120",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 25)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_121",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 26)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_122",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 27)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_123",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 28)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_124",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 29)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_125",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 30)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_126",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 31)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_127",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 32)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_128",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 33)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_129",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 34)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_130",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 35)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_131",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 36)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_132",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 37)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_133",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 38)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_134",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 39)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_135",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 40)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_136",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 41)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_137",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 42)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_138",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 43)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_139",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 44)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_140",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 45)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_141",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 46)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_142",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 47)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_143",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 48)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_144",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 49)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_145",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 50)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_146",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 51)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_147",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 52)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_148",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 53)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_149",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 54)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  },
+  {
+    "id": "iq_150",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about yourself and your journey in Computer Science. (Question 55)",
+    "idealAnswerOutline": "Provide structured summary: academic background at Govt. Engineering College Ajmer, technical core focus (full stack / DSA), key projects developed, and career aspiration.",
+    "rubricKeywords": [
+      "Communication",
+      "Clarity",
+      "Academic background",
+      "Technical vision"
+    ]
+  },
+  {
+    "id": "iq_151",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Describe a challenging technical bug you encountered in a project and how you resolved it. (Question 56)",
+    "idealAnswerOutline": "Use STAR method: Situation (project context), Task (the bug), Action (debugging tools, memory profiling, hypothesis testing), Result (speedup or fix with metrics).",
+    "rubricKeywords": [
+      "STAR method",
+      "Debugging mindset",
+      "Root cause analysis",
+      "Measurable outcome"
+    ]
+  },
+  {
+    "id": "iq_152",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Why do you want to join our company specifically? (Question 57)",
+    "idealAnswerOutline": "Demonstrate company research: cite their products, culture, engineering blog innovations, or mission, and map your skills directly to their open needs.",
+    "rubricKeywords": [
+      "Company alignment",
+      "Research",
+      "Mutual growth",
+      "Value proposition"
+    ]
+  },
+  {
+    "id": "iq_153",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Tell me about a time you had a conflict with a teammate and how you handled it. (Question 58)",
+    "idealAnswerOutline": "Focus on professional objective resolution: active listening, reviewing code guidelines or benchmarks, and reaching consensus without personal friction.",
+    "rubricKeywords": [
+      "Empathy",
+      "Conflict resolution",
+      "Team collaboration",
+      "Professionalism"
+    ]
+  },
+  {
+    "id": "iq_154",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "Where do you see yourself in 3 to 5 years as an engineer? (Question 59)",
+    "idealAnswerOutline": "Demonstrate balanced ambition: mastering scalable system architecture, mentoring junior engineers, owning end-to-end features, and contributing to open-source or product roadmaps.",
+    "rubricKeywords": [
+      "Long-term vision",
+      "Leadership",
+      "Technical depth",
+      "Growth mindset"
+    ]
+  },
+  {
+    "id": "iq_155",
+    "category": "HR & Behavioral",
+    "roleTier": "HR/Behavioral",
+    "question": "How do you prioritize deadlines when juggling multiple academic and project assignments? (Question 60)",
+    "idealAnswerOutline": "Discuss time management: Eisenhower matrix, sprint planning, breaking deliverables into daily tasks, and proactively communicating blockers.",
+    "rubricKeywords": [
+      "Time management",
+      "Prioritization",
+      "Communication",
+      "Resilience"
+    ]
+  }
+]

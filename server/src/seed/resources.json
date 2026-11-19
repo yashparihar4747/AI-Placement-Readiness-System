@@ -1,0 +1,98 @@
+[
+  {
+    "id": "res_dsa_roadmap",
+    "title": "Complete DSA Roadmap for Campus Placements",
+    "category": "Roadmap",
+    "readTime": "12 min read",
+    "summary": "Step-by-step master guide from basic Arrays to Dynamic Programming and Graphs with targeted LeetCode problem recommendations.",
+    "tags": [
+      "DSA",
+      "LeetCode",
+      "Placement Strategy"
+    ],
+    "sections": [
+      {
+        "heading": "Phase 1: Foundations (Week 1-3)",
+        "content": "Master time & space complexity Big-O notation. Solve 20 Easy problems on Arrays, Strings, Two Pointers, and Hash Maps."
+      },
+      {
+        "heading": "Phase 2: Core Linear & Non-Linear (Week 4-6)",
+        "content": "Implement Linked Lists, Stacks, Queues, Binary Trees, and Binary Search Trees from scratch. Practice tree DFS/BFS traversals."
+      },
+      {
+        "heading": "Phase 3: Advanced Optimization (Week 7-9)",
+        "content": "Master Graphs (BFS, DFS, Dijkstra, TopoSort) and Dynamic Programming (1D array optimization, 0/1 Knapsack, LIS, LCS)."
+      }
+    ]
+  },
+  {
+    "id": "res_system_design",
+    "title": "System Design Primer for Undergraduates",
+    "category": "Primer",
+    "readTime": "15 min read",
+    "summary": "Clear, practical guide to scaling systems from 1 to 1,000,000 users: Load Balancers, Caching, Databases, and Microservices.",
+    "tags": [
+      "System Design",
+      "Microservices",
+      "Scalability"
+    ],
+    "sections": [
+      {
+        "heading": "Horizontal vs Vertical Scaling",
+        "content": "Understand why horizontal scaling (scale-out) with stateless servers and distributed caches is the gold standard in tech."
+      },
+      {
+        "heading": "Caching Strategies",
+        "content": "Explore Cache-Aside, Write-Through, and Write-Back policies using Redis to reduce database read latencies by 90%."
+      },
+      {
+        "heading": "CAP Theorem Demystified",
+        "content": "Consistency, Availability, and Partition Tolerance tradeoffs in modern distributed systems."
+      }
+    ]
+  },
+  {
+    "id": "res_resume_handbook",
+    "title": "Google XYZ Resume Writing Playbook",
+    "category": "Career",
+    "readTime": "8 min read",
+    "summary": "How to craft bullet points using the Google formula: 'Accomplished [X] as measured by [Y] by doing [Z]'.",
+    "tags": [
+      "ATS Resume",
+      "Career Tips",
+      "Hiring Rubric"
+    ],
+    "sections": [
+      {
+        "heading": "The Google XYZ Formula",
+        "content": "Transform weak bullets into high-impact metrics. Instead of 'built a web app', write 'Engineered full-stack portal serving 1,200 active users with 99.4% uptime'."
+      },
+      {
+        "heading": "Avoiding ATS Traps",
+        "content": "Do not use two-column tables, fancy icons, or images that confuse ATS PDF parsers. Stick to standard clean single-column hierarchy."
+      }
+    ]
+  },
+  {
+    "id": "res_30day_sprint",
+    "title": "30-Day Intensive Placement Sprint Plan",
+    "category": "Schedule",
+    "readTime": "10 min read",
+    "summary": "Daily structured schedule balancing 2 DSA problems, 15 aptitude questions, and 1 mock interview session every day.",
+    "tags": [
+      "Daily Routine",
+      "Study Plan",
+      "Motivation"
+    ],
+    "sections": [
+      {
+        "heading": "Daily Split (3 Hours/Day)",
+        "content": "1.5 hours: 2 DSA problems. 45 mins: 1 timed aptitude test. 45 mins: Core CS revision (OS, DBMS, Networks)."
+      },
+      {
+        "heading": "Weekend Reviews",
+        "content": "Every Saturday: 1 full-length mock test. Every Sunday: Resume audit and 1 adaptive mock interview."
+      }
+    ]
+  }
+]

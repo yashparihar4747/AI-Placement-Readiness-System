@@ -19,11 +19,15 @@ export const protect = (req, res, next) => {
         return res.status(401).json({ message: 'User not found in system' });
       }
 
+      const rawRole = user.role;
+      const normalizedRole = (rawRole === 'tpo_admin' || rawRole === 'admin') ? 'admin' : 'student';
+
       req.user = {
         id: user.id,
         email: user.email,
         name: user.name,
-        role: user.role
+        role: normalizedRole,
+        originalRole: rawRole
       };
 
       next();

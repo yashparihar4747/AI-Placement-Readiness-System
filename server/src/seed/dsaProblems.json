@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "dsa_001",
+    "title": "Two Sum",
+    "statement": "Given an integer array nums and an integer target, return indices of the two numbers such that they add up to target. Assume exactly one solution exists.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Use a hash map to store each number's index as you iterate. Check if (target - num) exists in the map.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/two-sum/",
+    "day": 1
+  },
+  {
+    "id": "dsa_002",
+    "title": "Maximum Subarray (Kadane's Algorithm)",
+    "statement": "Find the contiguous subarray within an integer array which has the largest sum and return its sum.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Maintain currentSum = max(num, currentSum + num) and update globalMax at each step.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/maximum-subarray/",
+    "day": 2
+  },
+  {
+    "id": "dsa_003",
+    "title": "Rotate Array by K Steps",
+    "statement": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Reverse the entire array, then reverse the first k elements, then reverse the remaining n-k elements.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/rotate-array/",
+    "day": 3
+  },
+  {
+    "id": "dsa_004",
+    "title": "Merge Overlapping Intervals",
+    "statement": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals into non-overlapping intervals.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sort intervals by start time. Compare current interval with the last merged interval's end time.",
+    "optimalComplexity": {
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/merge-intervals/",
+    "day": 4
+  },
+  {
+    "id": "dsa_005",
+    "title": "Product of Array Except Self",
+    "statement": "Return an array output such that output[i] is equal to the product of all elements of nums except nums[i], without using division.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Calculate prefix products in forward pass, then multiply suffix products in backward pass.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/product-of-array-except-self/",
+    "day": 5
+  },
+  {
+    "id": "dsa_006",
+    "title": "Majority Element (> n/2 times)",
+    "statement": "Given an array nums of size n, return the majority element that appears more than ⌊n / 2⌋ times.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "Boyer-Moore Voting Algorithm: maintain candidate and count. Increment if match, decrement if mismatch.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/majority-element/",
+    "day": 6
+  },
+  {
+    "id": "dsa_007",
+    "title": "Subarray Sum Equals K",
+    "statement": "Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Use running prefix sum hash map storing frequencies of cumulative sums seen so far.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/subarray-sum-equals-k/",
+    "day": 7
+  },
+  {
+    "id": "dsa_008",
+    "title": "Longest Consecutive Sequence",
+    "statement": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence in O(n) time.",
+    "topic": "Arrays & Hashing",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Insert elements into a Hash Set. Only start counting sequence from numbers that don't have (num - 1) in the set.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "day": 8
+  },
+  {
+    "id": "dsa_009",
+    "title": "Valid Anagram",
+    "statement": "Given two strings s and t, return true if t is an anagram of s, and false otherwise.",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Use a frequency array of size 26. Increment count for chars in s and decrement for chars in t.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/valid-anagram/",
+    "day": 9
+  },
+  {
+    "id": "dsa_010",
+    "title": "Longest Substring Without Repeating Characters",
+    "statement": "Given a string s, find the length of the longest substring without repeating characters.",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Sliding window with hash map storing most recent index of each character.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(min(n, m))"
+    },
+    "practiceLink": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "day": 10
+  },
+  {
+    "id": "dsa_011",
+    "title": "Palindromic Substrings Count",
+    "statement": "Given a string s, return the number of palindromic substrings in it.",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Expand around center for each index for both odd and even length centers.",
+    "optimalComplexity": {
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/palindromic-substrings/",
+    "day": 11
+  },
+  {
+    "id": "dsa_012",
+    "title": "String Compression (Run-Length)",
+    "statement": "Compress an array of characters in-place using the counts of repeated characters.",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Two-pointer approach: read consecutive identical characters, write character and its count.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/string-compression/",
+    "day": 12
+  },
+  {
+    "id": "dsa_013",
+    "title": "Group Anagrams",
+    "statement": "Given an array of strings strs, group the anagrams together in any order.",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Use character frequency tuple (or sorted string) as hash map key.",
+    "optimalComplexity": {
+      "time": "O(n * k)",
+      "space": "O(n * k)"
+    },
+    "practiceLink": "https://leetcode.com/problems/group-anagrams/",
+    "day": 13
+  },
+  {
+    "id": "dsa_014",
+    "title": "Minimum Window Substring",
+    "statement": "Given strings s and t, return the minimum window substring of s such that every character in t is included in the window.",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sliding window with two frequency maps and a 'formed' variable tracking fulfilled unique character counts.",
+    "optimalComplexity": {
+      "time": "O(n + m)",
+      "space": "O(n + m)"
+    },
+    "practiceLink": "https://leetcode.com/problems/minimum-window-substring/",
+    "day": 14
+  },
+  {
+    "id": "dsa_015",
+    "title": "Two Sum II - Input Array Is Sorted",
+    "statement": "Given a 1-indexed sorted array of integers numbers, find two numbers such that they add up to target.",
+    "topic": "Two Pointers & Sliding Window",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "Left pointer at start, right at end. Move left if sum < target, right if sum > target.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "day": 15
+  },
+  {
+    "id": "dsa_016",
+    "title": "3Sum Zero Triplet",
+    "statement": "Find all unique triplets [nums[i], nums[j], nums[k]] such that i != j != k and nums[i] + nums[j] + nums[k] == 0.",
+    "topic": "Two Pointers & Sliding Window",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sort array. Fix first element, then use two pointers for remaining two. Skip duplicates carefully.",
+    "optimalComplexity": {
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/3sum/",
+    "day": 16
+  },
+  {
+    "id": "dsa_017",
+    "title": "Container With Most Water",
+    "statement": "Given an integer array height of length n, find two lines that together with the x-axis form a container containing the most water.",
+    "topic": "Two Pointers & Sliding Window",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Two pointers at both ends. Compute area, then move the pointer with smaller height inward.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/container-with-most-water/",
+    "day": 17
+  },
+  {
+    "id": "dsa_018",
+    "title": "Trapping Rain Water",
+    "statement": "Given n non-negative integers representing an elevation map where width of each bar is 1, compute how much water it can trap after raining.",
+    "topic": "Two Pointers & Sliding Window",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Two pointers with leftMax and rightMax, advance the pointer with smaller max boundary.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/trapping-rain-water/",
+    "day": 18
+  },
+  {
+    "id": "dsa_019",
+    "title": "Longest Repeating Character Replacement",
+    "statement": "You are given a string s and an integer k. Choose any character and change it up to k times. Return length of longest substring with same letter.",
+    "topic": "Two Pointers & Sliding Window",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sliding window tracking maxFrequency. If (windowLength - maxFreq) > k, shrink from left.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "day": 19
+  },
+  {
+    "id": "dsa_020",
+    "title": "Reverse a Linked List",
+    "statement": "Given the head of a singly linked list, reverse the list, and return the reversed list.",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "Iterate with three pointers: prev = null, curr = head, nextTemp. Reassign curr.next = prev.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/reverse-linked-list/",
+    "day": 20
+  },
+  {
+    "id": "dsa_021",
+    "title": "Detect Cycle in Linked List",
+    "statement": "Given head of a linked list, determine if the list has a cycle in it.",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "Floyd's Tortoise and Hare algorithm: slow moves 1 step, fast moves 2 steps. They meet if cycle exists.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/linked-list-cycle/",
+    "day": 21
+  },
+  {
+    "id": "dsa_022",
+    "title": "Merge Two Sorted Lists",
+    "statement": "Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Use a dummy head node. Compare values of l1 and l2, appending smaller node to merged list.",
+    "optimalComplexity": {
+      "time": "O(n + m)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "day": 22
+  },
+  {
+    "id": "dsa_023",
+    "title": "Find Middle of the Linked List",
+    "statement": "Given the head of a singly linked list, return the middle node of the linked list.",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Fast pointer moves two steps while slow pointer moves one step. When fast reaches end, slow is at middle.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "day": 23
+  },
+  {
+    "id": "dsa_024",
+    "title": "Remove Nth Node From End of List",
+    "statement": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+    "topic": "Linked List",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Advance fast pointer n steps ahead, then advance slow and fast together until fast reaches end.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "day": 24
+  },
+  {
+    "id": "dsa_025",
+    "title": "LRU Cache Design",
+    "statement": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache with get and put in O(1) time.",
+    "topic": "Linked List",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Combine a Doubly Linked List with a Hash Map mapping keys to node pointers.",
+    "optimalComplexity": {
+      "time": "O(1)",
+      "space": "O(capacity)"
+    },
+    "practiceLink": "https://leetcode.com/problems/lru-cache/",
+    "day": 25
+  },
+  {
+    "id": "dsa_026",
+    "title": "Valid Parentheses",
+    "statement": "Given a string s containing '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+    "topic": "Stack & Queue",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "Push opening brackets onto stack. For closing brackets, pop and check if matching bracket type.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/valid-parentheses/",
+    "day": 26
+  },
+  {
+    "id": "dsa_027",
+    "title": "Min Stack Implementation",
+    "statement": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time O(1).",
+    "topic": "Stack & Queue",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Store pairs (val, currentMin) or maintain a separate parallel stack of minimum values.",
+    "optimalComplexity": {
+      "time": "O(1)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/min-stack/",
+    "day": 27
+  },
+  {
+    "id": "dsa_028",
+    "title": "Next Greater Element",
+    "statement": "Find the first greater element to the right for each element in an array. If no greater element exists, return -1.",
+    "topic": "Stack & Queue",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Monotonic decreasing stack: iterate from right to left, popping elements smaller than current.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/next-greater-element-i/",
+    "day": 28
+  },
+  {
+    "id": "dsa_029",
+    "title": "Implement Queue using Two Stacks",
+    "statement": "Implement a first in first out (FIFO) queue using only two standard LIFO stacks.",
+    "topic": "Stack & Queue",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Push onto stack1. For pop/peek, transfer from stack1 to stack2 if stack2 is empty.",
+    "optimalComplexity": {
+      "time": "O(1) amortized",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "day": 29
+  },
+  {
+    "id": "dsa_030",
+    "title": "Sliding Window Maximum",
+    "statement": "Given an array nums and window size k, return the max element in each sliding window of size k.",
+    "topic": "Stack & Queue",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Use a Monotonic Deque storing indices, maintaining elements in decreasing order.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(k)"
+    },
+    "practiceLink": "https://leetcode.com/problems/sliding-window-maximum/",
+    "day": 30
+  },
+  {
+    "id": "dsa_031",
+    "title": "Search in Rotated Sorted Array",
+    "statement": "Given an integer array nums sorted in ascending order and rotated at an unknown pivot, find index of target in O(log n).",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Determine which half (left or right) is sorted. Check if target lies within that sorted range.",
+    "optimalComplexity": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "day": 31
+  },
+  {
+    "id": "dsa_032",
+    "title": "Find First and Last Position of Element",
+    "statement": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "Run two modified binary searches: one finding lower bound, one finding upper bound.",
+    "optimalComplexity": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "day": 32
+  },
+  {
+    "id": "dsa_033",
+    "title": "Square Root Integer Function",
+    "statement": "Given a non-negative integer x, return the square root of x rounded down to the nearest integer without built-in functions.",
+    "topic": "Binary Search",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Binary search in range [1, x]. If mid * mid <= x, record mid as answer and search right half.",
+    "optimalComplexity": {
+      "time": "O(log x)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/sqrtx/",
+    "day": 33
+  },
+  {
+    "id": "dsa_034",
+    "title": "Find Peak Element",
+    "statement": "A peak element is an element strictly greater than its neighbors. Find index of any peak element in O(log n).",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "If nums[mid] < nums[mid + 1], peak must lie in right half; otherwise it lies in left half.",
+    "optimalComplexity": {
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/find-peak-element/",
+    "day": 34
+  },
+  {
+    "id": "dsa_035",
+    "title": "Capacity To Ship Packages Within D Days",
+    "statement": "Find the least weight capacity of the ship that will result in all packages being shipped within days D.",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Binary search on answer between max(weights) and sum(weights). Check feasibility greedily.",
+    "optimalComplexity": {
+      "time": "O(n log(sum - max))",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+    "day": 35
+  },
+  {
+    "id": "dsa_036",
+    "title": "Binary Tree Level Order Traversal",
+    "statement": "Given the root of a binary tree, return the level order traversal of its nodes' values (from left to right, level by level).",
+    "topic": "Trees & BST",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "BFS using a queue. Track queue.length at start of each iteration to capture entire level.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "day": 36
+  },
+  {
+    "id": "dsa_037",
+    "title": "Maximum Depth of Binary Tree",
+    "statement": "Given the root of a binary tree, return its maximum depth (number of nodes along longest path).",
+    "topic": "Trees & BST",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Post-order recursive DFS: 1 + max(depth(node.left), depth(node.right)).",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(h)"
+    },
+    "practiceLink": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "day": 37
+  },
+  {
+    "id": "dsa_038",
+    "title": "Validate Binary Search Tree",
+    "statement": "Given the root of a binary tree, determine if it is a valid binary search tree (BST).",
+    "topic": "Trees & BST",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "DFS passing valid ranges (minVal, maxVal). Left child range (minVal, node.val), right child (node.val, maxVal).",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(h)"
+    },
+    "practiceLink": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "day": 38
+  },
+  {
+    "id": "dsa_039",
+    "title": "Lowest Common Ancestor in BST",
+    "statement": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes p and q.",
+    "topic": "Trees & BST",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "If both p and q are smaller than root, traverse left; if both greater, traverse right; else root is LCA.",
+    "optimalComplexity": {
+      "time": "O(h)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "day": 39
+  },
+  {
+    "id": "dsa_040",
+    "title": "Diameter of Binary Tree",
+    "statement": "Return length of longest path between any two nodes in a tree. This path may or may not pass through root.",
+    "topic": "Trees & BST",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "At each node, compute max height of left and right. Update maxDiameter with leftHeight + rightHeight.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(h)"
+    },
+    "practiceLink": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "day": 40
+  },
+  {
+    "id": "dsa_041",
+    "title": "Serialize and Deserialize Binary Tree",
+    "statement": "Design an algorithm to serialize a binary tree to a string and deserialize that string back to the original tree.",
+    "topic": "Trees & BST",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Preorder traversal with delimiters and marker 'null' for missing children.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "day": 41
+  },
+  {
+    "id": "dsa_042",
+    "title": "Kth Smallest Element in a BST",
+    "statement": "Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all values of the nodes.",
+    "topic": "Trees & BST",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Inorder traversal visits BST elements in strictly ascending sorted order. Decrement k until k == 0.",
+    "optimalComplexity": {
+      "time": "O(h + k)",
+      "space": "O(h)"
+    },
+    "practiceLink": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+    "day": 42
+  },
+  {
+    "id": "dsa_043",
+    "title": "Path Sum Equals Target",
+    "statement": "Given root and targetSum, return true if tree has root-to-leaf path such that adding all values equals targetSum.",
+    "topic": "Trees & BST",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Recursively check left and right subtrees with targetSum - node.val. True if leaf reached with 0 remainder.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(h)"
+    },
+    "practiceLink": "https://leetcode.com/problems/path-sum/",
+    "day": 43
+  },
+  {
+    "id": "dsa_044",
+    "title": "Number of Islands",
+    "statement": "Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Iterate through cells. When '1' found, increment count and trigger DFS/BFS sink to '0' for all connected land.",
+    "optimalComplexity": {
+      "time": "O(m * n)",
+      "space": "O(m * n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/number-of-islands/",
+    "day": 44
+  },
+  {
+    "id": "dsa_045",
+    "title": "Clone Graph",
+    "statement": "Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Use a Hash Map mapping original nodes to cloned nodes. Traverse with DFS or BFS creating missing clones.",
+    "optimalComplexity": {
+      "time": "O(V + E)",
+      "space": "O(V)"
+    },
+    "practiceLink": "https://leetcode.com/problems/clone-graph/",
+    "day": 45
+  },
+  {
+    "id": "dsa_046",
+    "title": "Course Schedule (Topological Sort / Cycle)",
+    "statement": "There are numCourses courses labeled 0 to numCourses - 1. Determine if you can finish all courses given prerequisite pairs.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Kahn's Algorithm using in-degree array and queue, or DFS with 3-state visited array (0=unvisited, 1=visiting, 2=visited).",
+    "optimalComplexity": {
+      "time": "O(V + E)",
+      "space": "O(V + E)"
+    },
+    "practiceLink": "https://leetcode.com/problems/course-schedule/",
+    "day": 46
+  },
+  {
+    "id": "dsa_047",
+    "title": "Dijkstra's Shortest Path Algorithm",
+    "statement": "Given a weighted directed graph and source node, find shortest distances from source to all vertices.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Core"
+    ],
+    "approachHint": "Min-Heap priority queue storing (distance, node). Greedily expand shortest unvisited node.",
+    "optimalComplexity": {
+      "time": "O((V + E) log V)",
+      "space": "O(V)"
+    },
+    "practiceLink": "https://leetcode.com/problems/network-delay-time/",
+    "day": 47
+  },
+  {
+    "id": "dsa_048",
+    "title": "Number of Connected Components (Disjoint Set Union)",
+    "statement": "Find number of connected components in an undirected graph with n nodes and edge list.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Union-Find with path compression and union by rank. Decrement component count upon successful union.",
+    "optimalComplexity": {
+      "time": "O(E * α(V))",
+      "space": "O(V)"
+    },
+    "practiceLink": "https://leetcode.com/problems/number-of-provinces/",
+    "day": 48
+  },
+  {
+    "id": "dsa_049",
+    "title": "Word Ladder (Shortest Transformation)",
+    "statement": "Given two words (beginWord and endWord) and a dictionary wordList, return the length of the shortest transformation sequence.",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Bidirectional BFS: expand from both beginWord and endWord, checking one-letter mutations against wordSet.",
+    "optimalComplexity": {
+      "time": "O(M^2 * N)",
+      "space": "O(M * N)"
+    },
+    "practiceLink": "https://leetcode.com/problems/word-ladder/",
+    "day": 49
+  },
+  {
+    "id": "dsa_050",
+    "title": "Rotting Oranges (Multi-Source BFS)",
+    "statement": "Return minimum minutes until no fresh orange remains in grid. If impossible, return -1.",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Multi-source BFS: enqueue all initially rotten oranges. Spread rot level by level, decrementing fresh count.",
+    "optimalComplexity": {
+      "time": "O(m * n)",
+      "space": "O(m * n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/rotting-oranges/",
+    "day": 50
+  },
+  {
+    "id": "dsa_051",
+    "title": "Climbing Stairs",
+    "statement": "You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "topic": "Dynamic Programming",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Fibonacci recurrence: dp[i] = dp[i - 1] + dp[i - 2]. Store only last two states.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/climbing-stairs/",
+    "day": 51
+  },
+  {
+    "id": "dsa_052",
+    "title": "House Robber",
+    "statement": "Determine max amount of money you can rob tonight without alerting the police (cannot rob two adjacent houses).",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "At each house i, choose max(rob(i-1), rob(i-2) + nums[i]). Space optimize to two variables.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/house-robber/",
+    "day": 52
+  },
+  {
+    "id": "dsa_053",
+    "title": "Coin Change (Fewest Coins)",
+    "statement": "Given coins of different denominations and total amount, compute the fewest number of coins needed to make up that amount.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Bottom-up 1D DP array of size (amount + 1). dp[i] = min(dp[i], dp[i - coin] + 1) for each coin.",
+    "optimalComplexity": {
+      "time": "O(amount * coins.length)",
+      "space": "O(amount)"
+    },
+    "practiceLink": "https://leetcode.com/problems/coin-change/",
+    "day": 53
+  },
+  {
+    "id": "dsa_054",
+    "title": "Longest Increasing Subsequence (LIS)",
+    "statement": "Given an integer array nums, return the length of the longest strictly increasing subsequence.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Patience sorting with binary search (std::lower_bound) to build tails array in O(n log n).",
+    "optimalComplexity": {
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/longest-increasing-subsequence/",
+    "day": 54
+  },
+  {
+    "id": "dsa_055",
+    "title": "Longest Common Subsequence (LCS)",
+    "statement": "Given two strings text1 and text2, return the length of their longest common subsequence.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "2D table: if chars match, dp[i][j] = 1 + dp[i-1][j-1]; else max(dp[i-1][j], dp[i][j-1]).",
+    "optimalComplexity": {
+      "time": "O(m * n)",
+      "space": "O(min(m, n))"
+    },
+    "practiceLink": "https://leetcode.com/problems/longest-common-subsequence/",
+    "day": 55
+  },
+  {
+    "id": "dsa_056",
+    "title": "0/1 Knapsack Problem",
+    "statement": "Given weights and values of n items, put these items in a knapsack of capacity W to get maximum total value.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Core"
+    ],
+    "approachHint": "Iterate items, then iterate capacity backwards from W down to weight[i] to reuse 1D array.",
+    "optimalComplexity": {
+      "time": "O(n * W)",
+      "space": "O(W)"
+    },
+    "practiceLink": "https://leetcode.com/problems/partition-equal-subset-sum/",
+    "day": 56
+  },
+  {
+    "id": "dsa_057",
+    "title": "Edit Distance (Levenshtein Distance)",
+    "statement": "Given two strings word1 and word2, return minimum number of operations (insert, delete, replace) to convert word1 to word2.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "If word1[i] == word2[j], cost 0; else 1 + min(insert dp[i][j-1], delete dp[i-1][j], replace dp[i-1][j-1]).",
+    "optimalComplexity": {
+      "time": "O(m * n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/edit-distance/",
+    "day": 57
+  },
+  {
+    "id": "dsa_058",
+    "title": "Unique Paths in Grid",
+    "statement": "A robot on an m x n grid starts at top-left corner and moves only down or right. Find total unique paths to bottom-right.",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Service"
+    ],
+    "approachHint": "dp[j] = dp[j] + dp[j-1], or combination formula C(m+n-2, m-1).",
+    "optimalComplexity": {
+      "time": "O(m * n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/unique-paths/",
+    "day": 58
+  },
+  {
+    "id": "dsa_059",
+    "title": "Subsets (Power Set)",
+    "statement": "Given an integer array nums of unique elements, return all possible subsets (the power set).",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Backtracking template: at each step, include nums[i], recurse, then pop nums[i] to backtrack.",
+    "optimalComplexity": {
+      "time": "O(2^n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/subsets/",
+    "day": 59
+  },
+  {
+    "id": "dsa_060",
+    "title": "Permutations of Array",
+    "statement": "Given an array nums of distinct integers, return all possible permutations in any order.",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Swap elements into position index and recurse for index + 1, swapping back afterwards.",
+    "optimalComplexity": {
+      "time": "O(n * n!)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/permutations/",
+    "day": 60
+  },
+  {
+    "id": "dsa_061",
+    "title": "N-Queens Puzzle",
+    "statement": "Place n queens on an n x n chessboard such that no two queens attack each other. Return all distinct solutions.",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "Hard",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Track occupied columns, positive diagonals (r + c), and negative diagonals (r - c) using sets.",
+    "optimalComplexity": {
+      "time": "O(n!)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/n-queens/",
+    "day": 61
+  },
+  {
+    "id": "dsa_062",
+    "title": "Combination Sum",
+    "statement": "Given an array of distinct integers candidates and a target, return all unique combinations where candidates sum to target (numbers can be used unlimited times).",
+    "topic": "Recursion & Backtracking",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sort candidates. When exploring candidate i, recurse with same index i (since reuse allowed) and target - candidates[i].",
+    "optimalComplexity": {
+      "time": "O(2^target)",
+      "space": "O(target)"
+    },
+    "practiceLink": "https://leetcode.com/problems/combination-sum/",
+    "day": 62
+  },
+  {
+    "id": "dsa_063",
+    "title": "Activity Selection / Non-overlapping Intervals",
+    "statement": "Given an array of intervals, find minimum number of intervals to remove to make the rest non-overlapping.",
+    "topic": "Greedy & Heap",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product",
+      "Core"
+    ],
+    "approachHint": "Greedy choice: sort intervals by end time. Always keep interval with earliest finish time.",
+    "optimalComplexity": {
+      "time": "O(n log n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "day": 63
+  },
+  {
+    "id": "dsa_064",
+    "title": "Kth Largest Element in an Array",
+    "statement": "Given an integer array nums and an integer k, return the kth largest element in the array.",
+    "topic": "Greedy & Heap",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Maintain a Min-Heap of size k. The top of the heap is the kth largest element.",
+    "optimalComplexity": {
+      "time": "O(n log k)",
+      "space": "O(k)"
+    },
+    "practiceLink": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "day": 64
+  },
+  {
+    "id": "dsa_065",
+    "title": "Top K Frequent Elements",
+    "statement": "Given an integer array nums and an integer k, return the k most frequent elements in O(n) or O(n log k) time.",
+    "topic": "Greedy & Heap",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Count frequencies in hash map. Use bucket sort where bucket index represents frequency.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "day": 65
+  },
+  {
+    "id": "dsa_066",
+    "title": "Meeting Rooms II (Minimum Rooms Required)",
+    "statement": "Given an array of meeting time intervals consisting of start and end times, find the minimum number of conference rooms required.",
+    "topic": "Greedy & Heap",
+    "difficulty": "Medium",
+    "companyTags": [
+      "Product"
+    ],
+    "approachHint": "Sort start times and end times separately, or use a Min-Heap tracking end times of ongoing meetings.",
+    "optimalComplexity": {
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    "practiceLink": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "day": 66
+  },
+  {
+    "id": "dsa_067",
+    "title": "Single Number (Find Unique)",
+    "statement": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one in linear time and constant space.",
+    "topic": "Bit Manipulation & Math",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service",
+      "Product"
+    ],
+    "approachHint": "XOR of a number with itself is 0, and XOR with 0 is the number. XOR all elements together.",
+    "optimalComplexity": {
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/single-number/",
+    "day": 67
+  },
+  {
+    "id": "dsa_068",
+    "title": "Power of Two Check",
+    "statement": "Given an integer n, return true if it is a power of two; otherwise, return false.",
+    "topic": "Bit Manipulation & Math",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "A power of two in binary has exactly one bit set. Check n > 0 && (n & (n - 1)) == 0.",
+    "optimalComplexity": {
+      "time": "O(1)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/power-of-two/",
+    "day": 68
+  },
+  {
+    "id": "dsa_069",
+    "title": "Number of 1 Bits (Hamming Weight)",
+    "statement": "Write a function that takes the binary representation of a positive integer and returns the number of set bits ('1's) it has.",
+    "topic": "Bit Manipulation & Math",
+    "difficulty": "Easy",
+    "companyTags": [
+      "Service"
+    ],
+    "approachHint": "Brian Kernighan's algorithm: loop while n > 0, clearing lowest set bit using n = n & (n - 1).",
+    "optimalComplexity": {
+      "time": "O(set bits)",
+      "space": "O(1)"
+    },
+    "practiceLink": "https://leetcode.com/problems/number-of-1-bits/",
+    "day": 69
+  }
+]

@@ -1,46 +1,69 @@
 import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
-import { GraduationCap, Sparkles, CheckCircle, ArrowRight, ShieldCheck } from 'lucide-react';
+import {
+  GraduationCap,
+  ShieldCheck,
+  User,
+  Sparkles,
+  ArrowRight,
+  CheckCircle,
+  AlertCircle,
+  Key
+} from 'lucide-react';
 
 export const Login = () => {
-  const { login, register } = useAuth();
-  const [isRegister, setIsRegister] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [name, setName] = useState('');
-  const [rollNo, setRollNo] = useState('23IT17');
-  const [branch, setBranch] = useState('Computer Science & Engineering');
-  const [targetTier, setTargetTier] = useState('tier1');
-  const [error, setError] = useState('');
-  const [submitting, setSubmitting] = useState(false);
+  const { login } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const [activeTab, setActiveTab] = useState('student'); // 'student' | 'tpo'
+  const [email, setEmail] = useState('ganpat@geca.demo');
+  const [password, setPassword] = useState('Demo@1234');
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(location.state?.unauthorizedToast ? 'Access denied. Administrative role required for the requested resource.' : '');
+
+  const heroStudents = [
+    { name: 'Ganpat Singh', email: 'ganpat@geca.demo', desc: 'Top Performer (~82 Product, 55+ DSA)', badge: 'Hero Top' },
+    { name: 'Ronak Singh Rawat', email: 'ronak@geca.demo', desc: 'Balanced (~70 Service-Based)', badge: 'Balanced' },
+    { name: 'Jagdish Singh Rawat', email: 'jagdish@geca.demo', desc: 'Weak Resume, Strong Aptitude', badge: 'Developing' },
+    { name: 'Yash Parihar', email: 'yash@geca.demo', desc: 'Beginner (~35) for Next-Steps demo', badge: 'Beginner' },
+    { name: 'Priya Meena', email: 'priya@geca.demo', desc: 'Core / PSU Focused (90+)', badge: 'Core Ready' },
+    { name: 'Neha Choudhary', email: 'neha@geca.demo', desc: 'Fresh Empty Account (Live 0 demo)', badge: 'Fresh' },
+    { name: 'Rahul Verma', email: 'rahul@geca.demo', desc: 'Inactive 20 Days (TPO At-Risk Flag)', badge: 'At-Risk' },
+    { name: 'Sneha Gupta', email: 'sneha@geca.demo', desc: 'Rapidly Improving (Steep Trend)', badge: 'Fast Growth' },
+  ];
+
+  const tpoAccounts = [
+    { name: 'Dr. R. K. Sharma', email: 'tpo@geca.demo', desc: 'Head TPO - Full Authority, Main Demo', badge: 'Head TPO' },
+    { name: 'Mrs. Anita Joshi', email: 'tpo2@geca.demo', desc: 'Training Officer - Multi-TPO & Users', badge: 'Training Officer' },
+  ];
+
+  const handleLoginSubmit = async (e) => {
+    if (e) e.preventDefault();
     setError('');
     setSubmitting(true);
     try {
-      if (isRegister) {
-        await register({ name, email, password, rollNo, branch, targetTier });
-      } else {
-        await login(email, password);
+      const res = await login(email, password);
+      if (res && res.success) {
+        const role = (res.user.role === 'tpo_admin' || res.user.role === 'admin') ? 'admin' : 'student';
+        if (role === 'admin') {
+          navigate('/admin/dashboard');
+        } else {
+          navigate('/student/dashboard');
+        }
       }
     } catch (err) {
-      setError(err.message || 'Authentication failed. Please check credentials.');
+      setError(err.message || 'Authentication failed. Please verify credentials.');
     } finally {
       setSubmitting(false);
     }
   };
 
-  const handleQuickDemoLogin = async () => {
-    setError('');
-    setSubmitting(true);
-    try {
-      await login('ganpat.singh@ecajmer.ac.in', 'password123');
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setSubmitting(false);
-    }
+  const handleSelectDemoAccount = (accEmail, isTpo = false) => {
+    setEmail(accEmail);
+    setPassword('Demo@1234');
+    setActiveTab(isTpo ? 'tpo' : 'student');
   };
 
   return (
@@ -49,12 +72,13 @@ export const Login = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'radial-gradient(circle at top right, #312e81 0%, #0f172a 100%)',
+      background: 'radial-gradient(circle at top right, #1e1b4b 0%, #0f172a 100%)',
       padding: '2rem 1rem',
-      color: '#f8fafc'
+      color: '#f8fafc',
+      fontFamily: 'sans-serif'
     }}>
       <div style={{
-        maxWidth: '1000px',
+        maxWidth: '1100px',
         width: '100%',
         display: 'grid',
         gridTemplateColumns: '1.2fr 1fr',
@@ -63,13 +87,13 @@ export const Login = () => {
         backdropFilter: 'blur(16px)',
         border: '1px solid rgba(255, 255, 255, 0.12)',
         borderRadius: '24px',
-        padding: '3rem',
+        padding: '2.5rem',
         boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
       }}>
-        {/* Left Info Panel */}
+        {/* Left Side: Institutional Overview & Demo Click Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <div style={{
                 background: 'linear-gradient(135deg, #6366f1, #a855f7)',
                 padding: '0.65rem',
@@ -81,138 +105,170 @@ export const Login = () => {
                 <GraduationCap size={28} color="white" />
               </div>
               <div>
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>Govt. Engineering College, Ajmer</h3>
-                <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Department of Computer Science & Engineering</span>
+                <h3 style={{ fontSize: '1.05rem', fontWeight: 700, margin: 0 }}>Govt. Engineering College, Ajmer</h3>
+                <span style={{ fontSize: '0.78rem', color: '#94a3b8' }}>Training & Placement Portal 2026-27</span>
               </div>
             </div>
 
-            <h1 style={{ fontSize: '2.25rem', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
-              AI-Based Placement Preparation & Readiness Tracking System
+            <h1 style={{ fontSize: '1.85rem', fontWeight: 800, lineHeight: 1.25, marginBottom: '0.75rem', letterSpacing: '-0.02em' }}>
+              AI Placement Readiness & TPO Administration Portal
             </h1>
 
-            <p style={{ color: '#cbd5e1', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '2rem' }}>
-              A unified platform consolidating DSA practice, aptitude performance, ATS resume analytics,
-              and adaptive AI mock interviews into an actionable, tier-segmented placement readiness score.
+            <p style={{ color: '#cbd5e1', fontSize: '0.85rem', lineHeight: 1.5, marginBottom: '1.5rem' }}>
+              Unified platform delivering 4-pillar readiness analytics (DSA, Aptitude, Resume, Interview), automated drive shortlisting, and institutional batch reporting.
             </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-              {[
-                'Multi-Tier AI Scoring Engine (Product, Service, and Core/PSU)',
-                'ATS-Compliant Resume Analyzer with Job Description matching',
-                'Adaptive AI Mock Interview with real-time rubric scoring',
-                'Curated DSA Roadmap & Timed Aptitude Assessment Engine'
-              ].map((text, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', fontSize: '0.88rem', color: '#e2e8f0' }}>
-                  <CheckCircle size={18} color="#34d399" />
-                  <span>{text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+            {/* Quick-Click Demo Evaluator Cards */}
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.65rem' }}>
+                <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#38bdf8', fontWeight: 700 }}>
+                  Demo Accounts (Click to Auto-Fill)
+                </span>
+                <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>All Passwords: Demo@1234</span>
+              </div>
 
-          <div style={{
-            marginTop: '2.5rem',
-            paddingTop: '1.5rem',
-            borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-            fontSize: '0.82rem',
-            color: '#94a3b8'
-          }}>
-            GECA/CSE/2026 • Lead Student: Ganpat Singh (Roll No: 23IT17)
+              {/* TPO Staff Demo Accounts */}
+              <div style={{ marginBottom: '0.85rem' }}>
+                <div style={{ fontSize: '0.7rem', color: '#f59e0b', fontWeight: 700, marginBottom: '0.35rem' }}>TPO ADMINISTRATION:</div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+                  {tpoAccounts.map((t) => (
+                    <div
+                      key={t.email}
+                      onClick={() => handleSelectDemoAccount(t.email, true)}
+                      style={{
+                        background: email === t.email ? 'rgba(245, 158, 11, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                        border: email === t.email ? '1px solid #f59e0b' : '1px solid rgba(255, 255, 255, 0.08)',
+                        borderRadius: '8px',
+                        padding: '0.5rem 0.65rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease'
+                      }}
+                    >
+                      <div style={{ fontWeight: 700, fontSize: '0.8rem', color: '#fbbf24' }}>{t.name}</div>
+                      <div style={{ fontSize: '0.68rem', color: '#cbd5e1' }}>{t.desc}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Hero Students */}
+              <div>
+                <div style={{ fontSize: '0.7rem', color: '#38bdf8', fontWeight: 700, marginBottom: '0.35rem' }}>STUDENT STORYLINES:</div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.4rem', maxHeight: '170px', overflowY: 'auto' }}>
+                  {heroStudents.map((s) => (
+                    <div
+                      key={s.email}
+                      onClick={() => handleSelectDemoAccount(s.email, false)}
+                      style={{
+                        background: email === s.email ? 'rgba(56, 189, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                        border: email === s.email ? '1px solid #38bdf8' : '1px solid rgba(255, 255, 255, 0.08)',
+                        borderRadius: '8px',
+                        padding: '0.45rem 0.65rem',
+                        cursor: 'pointer',
+                        transition: 'all 0.15s ease'
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontWeight: 700, fontSize: '0.78rem' }}>{s.name}</span>
+                        <span style={{ fontSize: '0.62rem', background: 'rgba(255,255,255,0.1)', padding: '0.1rem 0.35rem', borderRadius: '4px', color: '#93c5fd' }}>{s.badge}</span>
+                      </div>
+                      <div style={{ fontSize: '0.68rem', color: '#94a3b8', marginTop: '0.15rem' }}>{s.desc}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Right Form Card */}
+        {/* Right Side: Auth Form */}
         <div style={{
-          background: 'rgba(255, 255, 255, 0.98)',
-          borderRadius: '20px',
-          padding: '2.25rem',
-          color: '#0f172a',
-          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.2)'
+          background: 'rgba(15, 23, 42, 0.6)',
+          borderRadius: '16px',
+          padding: '2rem',
+          border: '1px solid rgba(255, 255, 255, 0.08)',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
         }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 800 }}>
-              {isRegister ? 'Student Registration' : 'Student Sign In'}
-            </h2>
+          {/* Tabs: Student vs TPO */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            background: 'rgba(255, 255, 255, 0.05)',
+            padding: '0.25rem',
+            borderRadius: '10px',
+            marginBottom: '1.5rem'
+          }}>
             <button
               type="button"
-              onClick={() => { setIsRegister(!isRegister); setError(''); }}
+              onClick={() => { setActiveTab('student'); setEmail('ganpat@geca.demo'); }}
               style={{
-                background: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                background: activeTab === 'student' ? '#3b82f6' : 'transparent',
+                color: 'white',
                 border: 'none',
-                color: '#4f46e5',
+                padding: '0.55rem',
+                borderRadius: '8px',
                 fontWeight: 600,
                 fontSize: '0.85rem',
                 cursor: 'pointer'
               }}
             >
-              {isRegister ? 'Already registered? Log in' : 'New student? Register'}
+              <User size={15} /> Student Login
+            </button>
+            <button
+              type="button"
+              onClick={() => { setActiveTab('tpo'); setEmail('tpo@geca.demo'); }}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                background: activeTab === 'tpo' ? '#f59e0b' : 'transparent',
+                color: activeTab === 'tpo' ? '#0f172a' : 'white',
+                border: 'none',
+                padding: '0.55rem',
+                borderRadius: '8px',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                cursor: 'pointer'
+              }}
+            >
+              <ShieldCheck size={16} /> TPO Portal
             </button>
           </div>
 
+          <h2 style={{ fontSize: '1.35rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
+            {activeTab === 'tpo' ? 'TPO Officer Sign In' : 'Student Access Portal'}
+          </h2>
+          <p style={{ margin: '0 0 1.25rem 0', fontSize: '0.82rem', color: '#94a3b8' }}>
+            {activeTab === 'tpo' ? 'Authorized access restricted to GECA placement committee.' : 'Access your readiness score, practice tests, and company drives.'}
+          </p>
+
           {error && (
             <div style={{
-              background: '#fef2f2',
-              color: '#dc2626',
-              padding: '0.65rem 0.9rem',
+              background: 'rgba(239, 68, 68, 0.15)',
+              border: '1px solid #ef4444',
               borderRadius: '8px',
-              fontSize: '0.85rem',
+              padding: '0.65rem 0.85rem',
+              color: '#fca5a5',
+              fontSize: '0.82rem',
               marginBottom: '1rem',
-              border: '1px solid #fecaca'
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
             }}>
-              {error}
+              <AlertCircle size={16} /> {error}
             </div>
           )}
 
-          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {isRegister && (
-              <>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Ganpat Singh"
-                    className="input-control"
-                  />
-                </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-                  <div>
-                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
-                      Roll Number
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={rollNo}
-                      onChange={(e) => setRollNo(e.target.value)}
-                      placeholder="23IT17"
-                      className="input-control"
-                    />
-                  </div>
-                  <div>
-                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
-                      Target Tier
-                    </label>
-                    <select
-                      value={targetTier}
-                      onChange={(e) => setTargetTier(e.target.value)}
-                      className="input-control"
-                    >
-                      <option value="tier1">Tier 1: Product-Based</option>
-                      <option value="tier2">Tier 2: Service-Based</option>
-                      <option value="tier3">Tier 3: Core / PSU</option>
-                    </select>
-                  </div>
-                </div>
-              </>
-            )}
-
+          <form onSubmit={handleLoginSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div>
-              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
+              <label style={{ fontSize: '0.8rem', fontWeight: 600, color: '#cbd5e1', display: 'block', marginBottom: '0.35rem' }}>
                 Email Address
               </label>
               <input
@@ -220,13 +276,21 @@ export const Login = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="ganpat.singh@ecajmer.ac.in"
-                className="input-control"
+                style={{
+                  width: '100%',
+                  padding: '0.65rem',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'rgba(0, 0, 0, 0.2)',
+                  color: 'white',
+                  fontSize: '0.9rem',
+                  boxSizing: 'border-box'
+                }}
               />
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '0.35rem', color: '#334155' }}>
+              <label style={{ fontSize: '0.8rem', fontWeight: 600, color: '#cbd5e1', display: 'block', marginBottom: '0.35rem' }}>
                 Password
               </label>
               <input
@@ -234,52 +298,42 @@ export const Login = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••"
-                className="input-control"
+                style={{
+                  width: '100%',
+                  padding: '0.65rem',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  background: 'rgba(0, 0, 0, 0.2)',
+                  color: 'white',
+                  fontSize: '0.9rem',
+                  boxSizing: 'border-box'
+                }}
               />
             </div>
 
             <button
               type="submit"
               disabled={submitting}
-              className="btn-primary"
-              style={{ width: '100%', justifyContent: 'center', marginTop: '0.5rem', padding: '0.75rem' }}
-            >
-              {submitting ? 'Authenticating...' : (isRegister ? 'Complete Registration' : 'Sign In to Dashboard')}
-              <ArrowRight size={18} />
-            </button>
-          </form>
-
-          {/* Quick Demo Access */}
-          <div style={{ marginTop: '1.75rem', paddingTop: '1.25rem', borderTop: '1px solid #e2e8f0', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.78rem', color: '#64748b', display: 'block', marginBottom: '0.75rem' }}>
-              Examiner & Teacher Quick Demo Access:
-            </span>
-            <button
-              type="button"
-              onClick={handleQuickDemoLogin}
-              disabled={submitting}
               style={{
-                width: '100%',
-                background: '#f1f5f9',
-                color: '#312e81',
-                border: '1px solid #cbd5e1',
-                padding: '0.65rem 1rem',
-                borderRadius: '10px',
+                marginTop: '0.5rem',
+                background: activeTab === 'tpo' ? 'linear-gradient(135deg, #f59e0b, #d97706)' : 'linear-gradient(135deg, #3b82f6, #6366f1)',
+                color: activeTab === 'tpo' ? '#0f172a' : 'white',
+                border: 'none',
+                padding: '0.75rem',
+                borderRadius: '8px',
                 fontWeight: 700,
-                fontSize: '0.85rem',
-                cursor: 'pointer',
+                fontSize: '0.95rem',
+                cursor: submitting ? 'default' : 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '0.5rem',
-                transition: 'background 0.2s'
+                gap: '0.5rem'
               }}
             >
-              <Sparkles size={16} color="#6366f1" />
-              ⚡ Instant Demo Login (Ganpat Singh - 23IT17)
+              {submitting ? 'Authenticating...' : `Enter ${activeTab === 'tpo' ? 'TPO Portal' : 'Student Portal'}`}
+              <ArrowRight size={16} />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

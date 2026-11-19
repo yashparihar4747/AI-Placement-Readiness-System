@@ -1,0 +1,83 @@
+{
+  "batch_snapshots": [
+    {
+      "week": 1,
+      "weekDate": "2026-10-01",
+      "totalStudents": 30,
+      "avgReadiness": 56.4,
+      "placementReadyCount": 6,
+      "needsWorkCount": 9,
+      "dsaAvg": 48,
+      "aptAvg": 62,
+      "resumeAvg": 60,
+      "interviewAvg": 55
+    },
+    {
+      "week": 2,
+      "weekDate": "2026-10-08",
+      "totalStudents": 30,
+      "avgReadiness": 61.2,
+      "placementReadyCount": 9,
+      "needsWorkCount": 7,
+      "dsaAvg": 54,
+      "aptAvg": 65,
+      "resumeAvg": 64,
+      "interviewAvg": 61
+    },
+    {
+      "week": 3,
+      "weekDate": "2026-10-15",
+      "totalStudents": 30,
+      "avgReadiness": 66.8,
+      "placementReadyCount": 13,
+      "needsWorkCount": 5,
+      "dsaAvg": 62,
+      "aptAvg": 69,
+      "resumeAvg": 68,
+      "interviewAvg": 67
+    },
+    {
+      "week": 4,
+      "weekDate": "2026-10-22",
+      "totalStudents": 30,
+      "avgReadiness": 71.5,
+      "placementReadyCount": 17,
+      "needsWorkCount": 3,
+      "dsaAvg": 68,
+      "aptAvg": 74,
+      "resumeAvg": 72,
+      "interviewAvg": 72
+    }
+  ],
+  "score_weights": {
+    "tier1": {
+      "dsa": 40,
+      "aptitude": 20,
+      "resume": 15,
+      "interview": 25,
+      "cutoff": 78
+    },
+    "tier2": {
+      "dsa": 15,
+      "aptitude": 35,
+      "resume": 20,
+      "interview": 30,
+      "cutoff": 68
+    },
+    "tier3": {
+      "dsa": 10,
+      "aptitude": 45,
+      "resume": 25,
+      "interview": 20,
+      "cutoff": 70
+    },
+    "thresholds": {
+      "needsWork": 40,
+      "developing": 60,
+      "almostReady": 75,
+      "placementReady": 85
+    },
+    "version": 1,
+    "updatedAt": "2026-11-19T02:17:02.988Z"
+  }
+}

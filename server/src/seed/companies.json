@@ -1,0 +1,267 @@
+[
+  {
+    "id": "comp_google",
+    "name": "Google",
+    "tier": "Product-Based",
+    "logoText": "G",
+    "color": "#4285F4",
+    "packageRange": "₹32 - 45 LPA",
+    "eligibilityCGPA": 8,
+    "requiredSkills": [
+      "DSA Mastery",
+      "System Design",
+      "C++ / Java / Go",
+      "Algorithms",
+      "Concurrency"
+    ],
+    "selectionProcess": [
+      "Online Coding Challenge (LeetCode Hard)",
+      "Technical Round 1 (DSA Trees/Graphs)",
+      "Technical Round 2 (DP & Algorithms)",
+      "Googliness & Leadership Round"
+    ],
+    "preparationTips": "Practice solving Hard problems in under 35 minutes. Always explain thought process before coding and analyze space/time tradeoffs.",
+    "readinessCutoff": 85
+  },
+  {
+    "id": "comp_microsoft",
+    "name": "Microsoft",
+    "tier": "Product-Based",
+    "logoText": "MS",
+    "color": "#00A4EF",
+    "packageRange": "₹28 - 42 LPA",
+    "eligibilityCGPA": 7.5,
+    "requiredSkills": [
+      "Data Structures",
+      "System Design",
+      "C# / C++ / Java",
+      "Operating Systems",
+      "Cloud Concepts"
+    ],
+    "selectionProcess": [
+      "Online Assessment (3 DSA Questions)",
+      "Technical Round 1 (Data Structures)",
+      "Technical Round 2 (Design & Core CS)",
+      "AA (As Appropriate) Round"
+    ],
+    "preparationTips": "Heavy focus on binary trees, graph algorithms, and clean modular code with edge cases.",
+    "readinessCutoff": 82
+  },
+  {
+    "id": "comp_amazon",
+    "name": "Amazon",
+    "tier": "Product-Based",
+    "logoText": "A",
+    "color": "#FF9900",
+    "packageRange": "₹28 - 44 LPA",
+    "eligibilityCGPA": 7,
+    "requiredSkills": [
+      "DSA (Arrays, Trees, Graphs)",
+      "OOP Principles",
+      "Amazon 16 Leadership Principles",
+      "System Scalability"
+    ],
+    "selectionProcess": [
+      "Online Assessment (Coding + Work Styles)",
+      "Technical Rounds (2-3 rounds on DSA)",
+      "Bar Raiser Round (Leadership Principles + Coding)"
+    ],
+    "preparationTips": "Prepare concrete STAR method stories mapped to Amazon Leadership Principles like Customer Obsession and Bias for Action.",
+    "readinessCutoff": 80
+  },
+  {
+    "id": "comp_atlassian",
+    "name": "Atlassian",
+    "tier": "Product-Based",
+    "logoText": "ATL",
+    "color": "#0052CC",
+    "packageRange": "₹35 - 55 LPA",
+    "eligibilityCGPA": 8,
+    "requiredSkills": [
+      "Advanced DSA",
+      "System Design (Scalability)",
+      "Full Stack / Java / React",
+      "Values Fit"
+    ],
+    "selectionProcess": [
+      "HackerRank Coding Test",
+      "Coding & Data Structures Round",
+      "System Design Round",
+      "Values & Cultural Interview"
+    ],
+    "preparationTips": "Practice writing production-ready code with unit tests during technical interviews.",
+    "readinessCutoff": 84
+  },
+  {
+    "id": "comp_tcs",
+    "name": "TCS (Tata Consultancy Services)",
+    "tier": "Service-Based",
+    "logoText": "TCS",
+    "color": "#0F75BC",
+    "packageRange": "₹3.5 - 9 LPA (Ninja / Digital / Prime)",
+    "eligibilityCGPA": 6,
+    "requiredSkills": [
+      "Quantitative Aptitude",
+      "Logical Reasoning",
+      "C / Java / Python Basics",
+      "SQL & DBMS"
+    ],
+    "selectionProcess": [
+      "TCS NQT (Aptitude + Coding)",
+      "Technical Interview (OOP, SQL, College Project)",
+      "HR / Managerial Round"
+    ],
+    "preparationTips": "Score high in NQT aptitude and solve both coding questions to get upgraded to Digital or Prime package.",
+    "readinessCutoff": 65
+  },
+  {
+    "id": "comp_infosys",
+    "name": "Infosys",
+    "tier": "Service-Based",
+    "logoText": "INF",
+    "color": "#007CC3",
+    "packageRange": "₹3.6 - 9.5 LPA (SE / DSE / Specialist)",
+    "eligibilityCGPA": 6,
+    "requiredSkills": [
+      "Aptitude & Reasoning",
+      "Data Structures",
+      "Java / Python",
+      "Web Technologies"
+    ],
+    "selectionProcess": [
+      "InfyTQ / Certification Exam",
+      "Technical Interview (DSA, Web Dev, Projects)",
+      "HR Round"
+    ],
+    "preparationTips": "Strong emphasis on pseudo-code evaluation, algorithm tracing, and database queries.",
+    "readinessCutoff": 66
+  },
+  {
+    "id": "comp_wipro",
+    "name": "Wipro",
+    "tier": "Service-Based",
+    "logoText": "WIP",
+    "color": "#8B5CF6",
+    "packageRange": "₹3.5 - 6.5 LPA (Elite / Turbo)",
+    "eligibilityCGPA": 6,
+    "requiredSkills": [
+      "Aptitude & Verbal",
+      "OOPs in Java / C++",
+      "Basic DSA",
+      "Communication"
+    ],
+    "selectionProcess": [
+      "National Qualifier Test",
+      "Technical Interview",
+      "HR Round"
+    ],
+    "preparationTips": "Practice essay writing and speed aptitude calculations.",
+    "readinessCutoff": 62
+  },
+  {
+    "id": "comp_accenture",
+    "name": "Accenture",
+    "tier": "Service-Based",
+    "logoText": "ACC",
+    "color": "#A100FF",
+    "packageRange": "₹4.5 - 6.5 LPA (Associate / Advanced)",
+    "eligibilityCGPA": 6.5,
+    "requiredSkills": [
+      "Cognitive Assessment",
+      "Technical Assessment (Pseudocode, Cloud, Security)",
+      "Coding"
+    ],
+    "selectionProcess": [
+      "Cognitive & Technical Assessment",
+      "Coding Assessment (2 problems)",
+      "Communication Test",
+      "Interview"
+    ],
+    "preparationTips": "Pay attention to pseudocode tracing and networking fundamentals.",
+    "readinessCutoff": 68
+  },
+  {
+    "id": "comp_isro",
+    "name": "ISRO (Indian Space Research Organisation)",
+    "tier": "Core / PSU",
+    "logoText": "ISRO",
+    "color": "#FF6600",
+    "packageRange": "₹10 - 15 LPA (Scientist/Engineer 'SC')",
+    "eligibilityCGPA": 6.84,
+    "requiredSkills": [
+      "Operating Systems Internals",
+      "Computer Architecture",
+      "Computer Networks",
+      "Compiler Design",
+      "Engineering Mathematics"
+    ],
+    "selectionProcess": [
+      "ICRB Written Test (GATE Syllabus)",
+      "Technical Interview by Scientist Panel"
+    ],
+    "preparationTips": "Thoroughly review GATE syllabus; prepare to derive formulas and draw circuit/architecture diagrams on paper.",
+    "readinessCutoff": 75
+  },
+  {
+    "id": "comp_drdo",
+    "name": "DRDO",
+    "tier": "Core / PSU",
+    "logoText": "DRDO",
+    "color": "#1E3A8A",
+    "packageRange": "₹10 - 14 LPA",
+    "eligibilityCGPA": 7,
+    "requiredSkills": [
+      "C/C++ Systems Programming",
+      "Network Security",
+      "Algorithms",
+      "Embedded Systems"
+    ],
+    "selectionProcess": [
+      "GATE Score Shortlisting",
+      "Technical Subject Viva"
+    ],
+    "preparationTips": "Expect deep questions on memory management, assembly, and protocol safety.",
+    "readinessCutoff": 74
+  },
+  {
+    "id": "comp_bel",
+    "name": "Bharat Electronics Limited (BEL)",
+    "tier": "Core / PSU",
+    "logoText": "BEL",
+    "color": "#059669",
+    "packageRange": "₹8 - 12 LPA",
+    "eligibilityCGPA": 6.5,
+    "requiredSkills": [
+      "Microprocessors",
+      "Signal Processing",
+      "Data Structures",
+      "Engineering Math"
+    ],
+    "selectionProcess": [
+      "Written Exam",
+      "Interview"
+    ],
+    "preparationTips": "Focus on electronic principles and core computer architecture.",
+    "readinessCutoff": 70
+  },
+  {
+    "id": "comp_bhel",
+    "name": "BHEL",
+    "tier": "Core / PSU",
+    "logoText": "BHEL",
+    "color": "#DC2626",
+    "packageRange": "₹9 - 13 LPA",
+    "eligibilityCGPA": 6.5,
+    "requiredSkills": [
+      "Electrical / Mechanical / CS Core",
+      "Industrial Automation",
+      "Aptitude"
+    ],
+    "selectionProcess": [
+      "All-India CBT",
+      "Personal Interview"
+    ],
+    "preparationTips": "Master core subject fundamentals and industrial engineering standards.",
+    "readinessCutoff": 70
+  }
+]
